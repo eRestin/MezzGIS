@@ -56,20 +56,20 @@ ul, ol {
   padding: 0 5px 0 10px;
 }
 .nav-footer {
-  display: table;
+  display: inline;
   margin: 0 auto;
 }
 .nav-footer > ul {
   display: inline-block;
-  width: 120px;
-  margin-left: 50px;
-  vertical-align: top;
+  width: 130px;
+  margin-left: 20px;
+  /* vertical-align: top; */
 }
 .nav-footer > ul > li {
   padding: 10px 0;
 }
 footer {
-  background-color: #F8F8F8;
+  background-color: #E2EBDE;
   border-top: 1px solid #E7E7E7;
   margin-top: 15px;
   padding: 15px 0 30px;
@@ -513,4 +513,13 @@ float the buttons inside it. This prevents collapsing. */
 .navbar {
   background-color: #6B6967!important;
   min-height: 26px!important;
+}
+.foot_logo {
+  width: 10.25em;
+}
+.footy {
+  font-size: 0.8875em;
+}
+.foot_margins {
+  margin-left: 20px;
 }

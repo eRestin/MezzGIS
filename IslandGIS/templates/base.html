@@ -146,22 +146,19 @@
 
 <footer>
 <div class="container">
-{% page_menu "pages/menus/footer.html" %}
 
 <div class="row">
+    <div class="text-center">
+        <img src="{{ MEDIA_URL }}uploads/logo.png" class="foot_logo">
+    </div>
 <p class="site-info text-center">
-    {% trans "Powered by" %}
-    <a href="http://mezzanine.jupo.org">Mezzanine</a>{% ifinstalled cartridge.shop %},
-    <a href="http://cartridge.jupo.org">Cartridge</a>{% endifinstalled %}
-    {% trans "and" %}
-    <a href="http://www.djangoproject.com">Django</a>
-    <span class="separator">|</span>
-    {% trans "Theme by" %} <a target="_blank" href="http://getbootstrap.com">Bootstrap</a>
-    {% ifinstalled mezzanine.mobile %}
-    <span class="separator">|</span>
-    <a href="{% url "set_device" "mobile" %}?next={{ request.path }}">{% trans "View Mobile Site" %}</a>
-    {% endifinstalled %}
+    1-2 Sciennes Gardens, Edinburgh,<br />
+    Scotland, UK, EH9 1NR<br />
+    +44 (0) 131 667 5454
 </p>
+<div class="footy text-center">
+    Copyright © {% now "Y" %} BY ISLAND GIS {% page_menu "pages/menus/footer.html" %} <a href="http://www.iflookscouldkill.co.uk/" class="foot_margins" target="_new">Design by IfLooksCouldKill</a>
+</div>
 </div>
 </div>
 </footer>
