@@ -480,7 +480,7 @@ float the buttons inside it. This prevents collapsing. */
   background: url('/static/media/uploads/map.gif') no-repeat;
   background-position: center;
   background-color: #EAF0E3;
-  height:  400px;
+  height: 400px;
 }
 .my-menu {
   text-transform:uppercase;
