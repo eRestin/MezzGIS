@@ -5,6 +5,7 @@
 body {
   padding-top: 50px;
   line-height: 165%;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.5em;
 }
 h1 {
   margin-bottom: 15px;
@@ -483,9 +484,18 @@ float the buttons inside it. This prevents collapsing. */
   height: 400px;
   margin: 20px 0px 20px 0px;
 }
+.grey {
+  background-color: #EBEBEB;
+  height: 120px;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  padding-top: 2.60em;
+  font-size: 1.3125em;
+}
 .my-menu {
   text-transform:uppercase;
   float:right;
+  font-size: 1.0625em;
 }
 .my-panel {
   margin-bottom: 0px!important;
@@ -493,6 +503,9 @@ float the buttons inside it. This prevents collapsing. */
 }
 .my-panel-body {
   padding: 0px!important;
+}
+.my-panel-body p {
+  float:left;
 }
 .my-navbar {
   float: right!important;
