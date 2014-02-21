@@ -481,6 +481,7 @@ float the buttons inside it. This prevents collapsing. */
   background-position: center;
   background-color: #EAF0E3;
   height: 400px;
+  margin: 20px 0px 20px 0px;
 }
 .my-menu {
   text-transform:uppercase;
