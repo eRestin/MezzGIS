@@ -5,6 +5,7 @@
 body {
   padding-top: 50px;
   line-height: 165%;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.5em;
 }
 h1 {
   margin-bottom: 15px;
@@ -55,20 +56,20 @@ ul, ol {
   padding: 0 5px 0 10px;
 }
 .nav-footer {
-  display: table;
+  display: inline;
   margin: 0 auto;
 }
 .nav-footer > ul {
   display: inline-block;
-  width: 120px;
-  margin-left: 50px;
-  vertical-align: top;
+  width: 130px;
+  margin-left: 20px;
+  /* vertical-align: top; */
 }
 .nav-footer > ul > li {
   padding: 10px 0;
 }
 footer {
-  background-color: #F8F8F8;
+  background-color: #E2EBDE;
   border-top: 1px solid #E7E7E7;
   margin-top: 15px;
   padding: 15px 0 30px;
@@ -481,10 +482,20 @@ float the buttons inside it. This prevents collapsing. */
   background-position: center;
   background-color: #EAF0E3;
   height: 400px;
+  margin: 20px 0px 20px 0px;
+}
+.grey {
+  background-color: #EBEBEB;
+  height: 120px;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  padding-top: 2.60em;
+  font-size: 1.3125em;
 }
 .my-menu {
   text-transform:uppercase;
   float:right;
+  font-size: 1.0625em;
 }
 .my-panel {
   margin-bottom: 0px!important;
@@ -493,10 +504,22 @@ float the buttons inside it. This prevents collapsing. */
 .my-panel-body {
   padding: 0px!important;
 }
+.my-panel-body p {
+  float:left;
+}
 .my-navbar {
   float: right!important;
 }
 .navbar {
   background-color: #6B6967!important;
   min-height: 26px!important;
+}
+.foot_logo {
+  width: 10.25em;
+}
+.footy {
+  font-size: 0.8875em;
+}
+.foot_margins {
+  margin-left: 20px;
 }

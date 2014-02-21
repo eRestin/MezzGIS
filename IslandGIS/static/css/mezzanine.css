@@ -62,8 +62,8 @@ ul, ol {
 .nav-footer > ul {
   display: inline-block;
   width: 130px;
-  margin-left: 20px;
-  /* vertical-align: top; */
+  /* margin-left: 20px;
+  vertical-align: top; */
 }
 .nav-footer > ul > li {
   padding: 10px 0;
@@ -522,4 +522,7 @@ float the buttons inside it. This prevents collapsing. */
 }
 .foot_margins {
   margin-left: 20px;
+}
+.social-img {
+  width: 35px;
 }
