@@ -526,3 +526,28 @@ float the buttons inside it. This prevents collapsing. */
 .social-img {
   width: 35px;
 }
+.boxing_text {
+  margin-top: 80px;
+  float: left;
+  opacity: .75;
+  padding: 25px 30px 30px 50px;
+  background-color: gray;
+  color: #fff;
+  margin-bottom: 35px;
+  width: 365px;
+}
+.boxing_button {
+  margin-top: 220px;
+  width: 365px;
+  opacity: .75;
+}
+.boxing_button a {
+  padding: 30px 30px;
+  background-color: #A1C379;
+  color: #fff;
+
+}
+.boxing_button a:hover {
+  color: #9F914F;
+  background-color: #e2ebd8;
+}
