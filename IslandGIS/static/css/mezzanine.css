@@ -503,9 +503,11 @@ float the buttons inside it. This prevents collapsing. */
 }
 .my-panel-body {
   padding: 0px!important;
+  width: 225px;
 }
 .my-panel-body p {
   float:left;
+  margin-right: 20px;
 }
 .my-navbar {
   float: right!important;
@@ -545,7 +547,6 @@ float the buttons inside it. This prevents collapsing. */
   padding: 30px 30px;
   background-color: #A1C379;
   color: #fff;
-
 }
 .boxing_button a:hover {
   color: #9F914F;

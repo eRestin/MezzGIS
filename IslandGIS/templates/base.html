@@ -72,15 +72,6 @@
 
 <div class="container">
 
-    <div class="logo span4">
-    <a href="{% url "home" %}">
-        <img src="{{ MEDIA_URL }}uploads/logo.png">
-        </a>
-    </div>
-
-    <div class="my-menu span6">
-        {% page_menu "pages/menus/dropdown.html" %}
-    </div>
 {% nevercache %}
 {% if messages %}
 <div class="messages">
@@ -93,6 +84,16 @@
 </div>
 {% endif %}
 {% endnevercache %}
+
+<div class="logo span4">
+    <a href="{% url "home" %}">
+        <img src="{{ MEDIA_URL }}uploads/logo.png">
+        </a>
+    </div>
+
+    <div class="my-menu span6">
+        {% page_menu "pages/menus/dropdown.html" %}
+    </div>
 
 <!--
 <h1>{% block title %}{% endblock %}</h1>
