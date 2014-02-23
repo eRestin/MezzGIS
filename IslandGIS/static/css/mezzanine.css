@@ -552,3 +552,10 @@ float the buttons inside it. This prevents collapsing. */
   color: #9F914F;
   background-color: #e2ebd8;
 }
+.feature__title {
+  font-size: em(19);
+  font-style: italic;
+  color: #fff;
+  background-color: $dark-gray;
+  padding: em(20, 19);
+}

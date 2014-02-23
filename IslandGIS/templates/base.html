@@ -48,26 +48,13 @@
 <body id="{% block body_id %}body{% endblock %}">
 
 <div class="navbar navbar-fixed-top" role="navigation">
-<div class="container">
-<div class="navbar-header my-navbar">
-    {% nevercache %}
-    {% include "includes/user_panel.html" %}
-    {% endnevercache %}
-    <!--
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">{% trans "Toggle Navigation" %}</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </button>
-    {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/">{{ settings.SITE_TITLE }}</a>{% endif %}
-    {% if settings.SITE_TAGLINE %}<p class="navbar-text visible-lg">{{ settings.SITE_TAGLINE }}</p>{% endif %}
-    -->
-</div>
-<div class="navbar-collapse collapse">
-    <!--{% search_form "all" %}-->
-</div>
-</div>
+    <div class="container">
+        <div class="navbar-header my-navbar">
+            {% nevercache %}
+                {% include "includes/user_panel.html" %}
+            {% endnevercache %}
+        </div>
+    </div>
 </div>
 
 <div class="container">
@@ -95,15 +82,6 @@
         {% page_menu "pages/menus/dropdown.html" %}
     </div>
 
-<!--
-<h1>{% block title %}{% endblock %}</h1>
-
-<ul class="breadcrumb">
-{% spaceless %}
-{% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
-{% endspaceless %}
-</ul>
--->
 
 </div>
 {% block map %}{% endblock %}
@@ -113,34 +91,10 @@
 <div class="container">
 <div class="row">
 
-<!--
-<div class="col-md-2 left">
-    {% block left_panel %}
-    <div class="panel panel-default tree">{% page_menu "pages/menus/tree.html" %}</div>
-    {% endblock %}
-</div>
--->
-
 <div class="middle">
     {% block main %}{% endblock %}
 </div>
 
-<!--
-<div class="col-md-3 right">
-    {% nevercache %}
-    {% include "includes/user_panel.html" %}
-    {% endnevercache %}
-    <div class="panel panel-default">
-    <div class="panel-body">
-    {% block right_panel %}
-    {% ifinstalled mezzanine.twitter %}
-    {% include "twitter/tweets.html" %}
-    {% endifinstalled %}
-    {% endblock %}
-    </div>
-    </div>
-</div>
--->
 
 </div>
 </div>
