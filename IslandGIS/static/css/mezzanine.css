@@ -503,7 +503,8 @@ float the buttons inside it. This prevents collapsing. */
 }
 .my-panel-body {
   padding: 0px!important;
-  width: 225px;
+  margin-bottom: -5px;
+  color: #ffffff;
 }
 .my-panel-body p {
   float:left;
@@ -552,10 +553,22 @@ float the buttons inside it. This prevents collapsing. */
   color: #9F914F;
   background-color: #e2ebd8;
 }
+.feature_box {
+  background-color: #EBEBEB;
+}
+.feature {
+  width: 30.612244897959%;
+  margin: 50px 10px;
+  display: inline-block;
+}
 .feature__title {
-  font-size: em(19);
+  font-size: 1.1875em;
   font-style: italic;
   color: #fff;
-  background-color: $dark-gray;
-  padding: em(20, 19);
+  background-color: #6B6967;
+  padding: 1.05263em;
 }
+.feature__text { background-color: #f9f9f9; margin-top: 3px; padding: 1.05263em; border: 1px solid #e4e4e4; }
+.feature__text p { font-size: 0.875em; line-height: 1.3; }
+.feature__text a { font-size: 0.9375em; font-style: italic; }
+.feature__title--sub { font-size: 1em; font-weight: normal; margin-bottom: 1em; }
