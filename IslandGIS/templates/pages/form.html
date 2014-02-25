@@ -16,15 +16,17 @@ $(function() {$('.mezzanine-form :input:visible:enabled:first').focus();});
     {{ page.form.response|richtext_filters|safe }}
     {% endeditable %}
 {% else %}
+<div class="col-md-4 pull-right">
     {% with page.form as page_form %}
     {% editable page_form.content %}
     {{ page_form.content|richtext_filters|safe }}
     {% endeditable %}
+</div>
     {% endwith %}
 
     {% errors_for form %}
 
-    <form class="mezzanine-form" method="post"{% if form.is_multipart %} enctype="multipart/form-data"{% endif %}>
+    <form class="mezzanine-form col-md-6" method="post"{% if form.is_multipart %} enctype="multipart/form-data"{% endif %}>
         {% fields_for form %}
         <div class="form-actions">
             <input class="btn btn-primary btn-lg" type="submit" value="{{ page.form.button_text }}">

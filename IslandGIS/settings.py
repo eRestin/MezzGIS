@@ -135,7 +135,7 @@ USE_I18N = False
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true
 #   * Receive x-headers
-INTERNAL_IPS = ("127.0.0.1",)
+INTERNAL_IPS = ("127.0.0.1:8003",)
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (

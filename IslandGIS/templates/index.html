@@ -12,7 +12,7 @@
 <div class="mappy">
 	<div class="container">
 		<div class="boxing_text">
-        	<h3>Specialists in Advanced mapping technologies</h3>
+        	<h2>Specialists in Advanced mapping technologies</h2>
         </div>
         <div class="boxing_button">
         	<a href="" class="button">Find out more</a>
@@ -29,6 +29,20 @@
 {% endblocktrans %}
 {% endblock %}
 
+{% block tabs_box %}
+<div class="container">
+    <div class="tab__controls">
+        <ul class="tab__links">
+          <li><a class="tab__link" href="#tabs-1">Oil &amp; Gas</a></li>
+          <li><a class="tab__link" href="#tabs-2">Renewable Energy</a></li>
+          <li><a class="tab__link" href="#tabs-3">Utilities</a></li>
+          <li><a class="tab__link" href="#tabs-4">Maritime</a></li>
+        </ul>
+    </div>
+</div>
+{% include "includes/tabpages.html" %}
+{% endblock %}
+
 {% block feature_box %}
 <div class="feature_box">
     <div class="container">
@@ -37,7 +51,7 @@
             <div class="feature__text">
             <h4 class="feature__title--sub">Island GIS wins AGI Award for Innovation and Best Practice</h4>
             <p>We were delighted to win this award for our ongoing managed service to SSE.</p>
-            <a href="" class="feature__link">Read More</a>
+            <a href="team/our-team" class="feature__link">Read More</a>
             </div>
         </div>
         <div class="feature">
@@ -45,7 +59,7 @@
             <div class="feature__text">
             <h4 class="feature__title--sub">Island GIS wins AGI Award for Innovation and Best Practice</h4>
             <p>We were delighted to win this award for our ongoing managed service to SSE.</p>
-            <a href="" class="feature__link">Read More</a>
+            <a href="blog" class="feature__link">Read More</a>
             </div>
         </div>
         <div class="feature">
