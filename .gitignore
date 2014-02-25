@@ -1,14 +1,3 @@
-IslandGIS/admin
-IslandGIS/css
-IslandGIS/debug_toolbar
-IslandGis/filebrowser
-IslandGIS/fonts
-IslandGIS/grappelli
-IslandGIS/img
-IslandGIS/js
-IslandGIS/media
-IslandGIS/mezzanine
-IslandGIS/robots.txt
-IslandGIS/test
 IslandGIS/.DS_Store
 IslandGIS/dev.db
+static/media/uploads/.thumbnails
