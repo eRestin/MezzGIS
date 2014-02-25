@@ -135,7 +135,7 @@ USE_I18N = False
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true
 #   * Receive x-headers
-INTERNAL_IPS = ("127.0.0.1:8003",)
+INTERNAL_IPS = ("127.0.0.1",)
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -205,8 +205,8 @@ STATIC_URL = "/static/"
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = os.path.join(PROJECT_ROOT, STATIC_URL.strip("static/"))
-STATICFILES_DIRS = (os.path.join(PROJECT_ROOT, "static"),)
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static/')
+# STATICFILES_DIRS = (os.path.join(PROJECT_ROOT, "static"),)
 
 #STATIC_ROOT = ''
 #STATICFILES_DIRS = (os.path.join('static'),)
