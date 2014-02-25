@@ -604,4 +604,5 @@ float the buttons inside it. This prevents collapsing. */
 }
 .green {
   color:#A3C379;
+  text-align: center;
 }
