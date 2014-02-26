@@ -604,5 +604,13 @@ float the buttons inside it. This prevents collapsing. */
 }
 .green {
   color:#A3C379;
-  text-align: center;
+}
+.for_blog_icon {
+  margin:25px -10px 0px -5px;
+}
+.no_margins {
+  margin: 0px!important;
+}
+label.control-label {
+  display: none!important;
 }

@@ -70,28 +70,32 @@
 {% endif %}
 
 {% for blog_post in blog_posts.object_list %}
+
+<div class="row no_margins">
+<div class="col-md-1 for_blog_icon">
+
+{% with blog_post.categories.all as categories %}
+    {% if categories %}
+    {% for category in categories %}
+    <a href="{% url "blog_post_list_category" category.slug %}">{{ category }}</a>{% if not forloop.last %}, {% endif %}
+    {% endfor %}
+    {% endif %}
+{% endwith %}
+</div>
+
+<div class="md-col-5">
 {% block blog_post_list_post_title %}
 {% editable blog_post.title %}
 <h2>
     <a href="{{ blog_post.get_absolute_url }}">{{ blog_post.title }}</a>
 </h2>
 {% endeditable %}
+</div>
+</div>
 {% endblock %}
 {% block blog_post_list_post_metainfo %}
 {% editable blog_post.publish_date %}
 <h6 class="post-meta">
-    {% trans "Posted by" %}:
-    {% with blog_post.user as author %}
-    <a href="{% url "blog_post_list_author" author %}">{{ author.get_full_name|default:author.username }}</a>
-    {% endwith %}
-    {% with blog_post.categories.all as categories %}
-    {% if categories %}
-    {% trans "in" %}
-    {% for category in categories %}
-    <a href="{% url "blog_post_list_category" category.slug %}">{{ category }}</a>{% if not forloop.last %}, {% endif %}
-    {% endfor %}
-    {% endif %}
-    {% endwith %}
     {% blocktrans with sometime=blog_post.publish_date|timesince %}{{ sometime }} ago{% endblocktrans %}
 </h6>
 {% endeditable %}
@@ -125,7 +129,7 @@
     </ul>
     {% endif %}
     <p>
-    <a href="{{ blog_post.get_absolute_url }}">{% trans "read more" %}</a>
+    <a href="{{ blog_post.get_absolute_url }}">{% trans "Read More" %}</a>
     /
     {% if settings.COMMENTS_DISQUS_SHORTNAME %}
     <a href="{{ blog_post.get_absolute_url }}#disqus_thread"
