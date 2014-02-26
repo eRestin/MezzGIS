@@ -588,17 +588,17 @@ float the buttons inside it. This prevents collapsing. */
   display: block;
   margin-left: -20px;
 }
-.charfield.lala {
+.charfield.form_w {
   display: inline-block;
   width: 100%;
   max-width: 260px;
 }
-.emailfield.lala {
+.emailfield.form_w {
   display: inline-block;
   width: 100%;
   max-width: 260px;
 }
-.charfield.lala .input-xlarge {
+.charfield.form_w .input-xlarge {
   width: 525px!important;
   max-width: 525px!important;
 }
