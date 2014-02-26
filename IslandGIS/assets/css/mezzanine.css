@@ -608,6 +608,22 @@ float the buttons inside it. This prevents collapsing. */
 .for_blog_icon {
   margin:25px -10px 0px -5px;
 }
+.tab { padding: 3.75em 0.625em; color:#ffffff;}
+.tab img { margin-bottom: 1em; }
+@media screen and (min-width: 47.5em) { .tab img { margin-bottom: 0; margin-right: 3.75em; float: left; } }
+
+.tab__text h2 { text-transform: uppercase; font-size: 1.4375em; margin-bottom: .8em; }
+@media screen and (min-width: 47.5em) { .tab__text h2 { font-size: 2.0625em; } }
+.tab__text .button { margin-top: 1.25em; }
+
+.tab_button {
+  display: inline-block;
+  color: #fff;
+  padding: 20px 30px;
+  background-color: #A1C379;
+  color: #fff;
+}
+
 .no_margins {
   margin: 0px!important;
 }
