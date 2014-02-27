@@ -1,4 +1,6 @@
+.DS_Store
 IslandGIS/.DS_Store
+IslandGIS/*.pyc
 IslandGIS/dev.db
 IslandGIS/static/media/uploads/.thumbnails
 IslandGIS/static/css/

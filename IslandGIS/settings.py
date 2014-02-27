@@ -157,6 +157,14 @@ STATICFILES_FINDERS = (
 # a mode you'd pass directly to os.chmod.
 FILE_UPLOAD_PERMISSIONS = 0o644
 
+FILEBROWSER_EXTENSIONS = {
+    'Folder': [''],
+    'Image': ['.jpg','.jpeg','.gif','.png','.tif','.tiff'],
+    'Video': ['.mp4', '.mov','.wmv','.mpeg','.mpg','.avi','.rm'],
+    'Document': ['.pdf','.doc','.rtf','.txt','.xls','.csv'],
+    'Audio': ['.mp3','.wav','.aiff','.midi','.m4p', '.ogg'],
+    'Code': ['.html','.py','.js','.css']
+}
 
 #############
 # DATABASES #

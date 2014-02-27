@@ -579,7 +579,7 @@ float the buttons inside it. This prevents collapsing. */
 .tab__links li {
   display: block;
 }
-.tab__link { background-color: #ebebeb; color: #6b6967; float: left; margin-right: 2px; width: 263px; text-align: center; text-transform: uppercase; padding: 20px 0; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.tab__link { background-color: #ebebeb; color: #6b6967; float: left; margin-right: 2px; width: 243px; text-align: center; text-transform: uppercase; padding: 20px 0; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 .tab__link.active { background-color: #6b6967; color: #fff; }
 .tab__link.active:hover { background-color: #6b6967; }
 .tab__link:hover { background-color: #b7b5b4; color: #fff; }
