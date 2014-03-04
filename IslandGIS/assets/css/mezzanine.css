@@ -478,16 +478,12 @@ float the buttons inside it. This prevents collapsing. */
   float: left;
 }
 .mappy {
-  background: url('/static/media/uploads/map.gif') no-repeat;
-  background-position: center;
-  background-color: #EAF0E3;
-  height: 400px;
-  margin: 20px 0px 20px 0px;
+
 }
 .grey {
   background-color: #EBEBEB;
   height: 120px;
-  margin: 20px 0px 20px 0px;
+  margin-bottom: 20px;
   text-align: center;
   padding-top: 2.60em;
   font-size: 1.3125em;
@@ -495,7 +491,7 @@ float the buttons inside it. This prevents collapsing. */
 .my-menu {
   text-transform:uppercase;
   float:right;
-  font-size: 1.0625em;
+  margin-bottom: 40px;
 }
 .my-panel {
   margin-bottom: 0px!important;
@@ -556,74 +552,9 @@ float the buttons inside it. This prevents collapsing. */
 .feature_box {
   background-color: #EBEBEB;
 }
-.feature {
-  width: 30.612244897959%;
-  margin: 50px 10px;
-  display: inline-block;
-}
-.feature__title {
-  font-size: 1.1875em;
-  font-style: italic;
-  color: #fff;
-  background-color: #6B6967;
-  padding: 1.05263em;
-}
-.feature__text { background-color: #f9f9f9; margin-top: 3px; padding: 1.05263em; border: 1px solid #e4e4e4; }
-.feature__text p { font-size: 0.875em; line-height: 1.3; }
-.feature__text a { font-size: 0.9375em; font-style: italic; }
-.feature__title--sub { font-size: 1em; font-weight: normal; margin-bottom: 1em; }
-
 .tabs_box {
   background-color: #6B6967;
 }
-.tab__links li {
-  display: block;
-}
-.tab__link { background-color: #ebebeb; color: #6b6967; float: left; margin-right: 2px; width: 243px; text-align: center; text-transform: uppercase; padding: 20px 0; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
-.tab__link.active { background-color: #6b6967; color: #fff; }
-.tab__link.active:hover { background-color: #6b6967; }
-.tab__link:hover { background-color: #b7b5b4; color: #fff; }
-
-.tab__controls {
-  display: block;
-  margin-left: -20px;
-}
-.charfield.form_w {
-  display: inline-block;
-  width: 100%;
-  max-width: 260px;
-}
-.emailfield.form_w {
-  display: inline-block;
-  width: 100%;
-  max-width: 260px;
-}
-.charfield.form_w .input-xlarge {
-  width: 525px!important;
-  max-width: 525px!important;
-}
-.green {
-  color:#A3C379;
-}
-.for_blog_icon {
-  margin:25px -10px 0px -5px;
-}
-.tab { padding: 3.75em 0.625em; color:#ffffff;}
-.tab img { margin-bottom: 1em; }
-@media screen and (min-width: 47.5em) { .tab img { margin-bottom: 0; margin-right: 3.75em; float: left; } }
-
-.tab__text h2 { text-transform: uppercase; font-size: 1.4375em; margin-bottom: .8em; }
-@media screen and (min-width: 47.5em) { .tab__text h2 { font-size: 2.0625em; } }
-.tab__text .button { margin-top: 1.25em; }
-
-.tab_button {
-  display: inline-block;
-  color: #fff;
-  padding: 20px 30px;
-  background-color: #A1C379;
-  color: #fff;
-}
-
 .no_margins {
   margin: 0px!important;
 }

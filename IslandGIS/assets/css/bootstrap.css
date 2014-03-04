@@ -585,7 +585,7 @@ cite {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 ul ul,
@@ -820,9 +820,9 @@ pre code {
   }
 }
 
-@media (min-width: 1028px /*1200px*/) {
+@media (min-width: 1200px) {
   .container {
-    width: 1010px /*1170px*/;
+    width: 1170px;
   }
 }
 
@@ -4101,7 +4101,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
 }
 
 .nav > li > a:hover,

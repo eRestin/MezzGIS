@@ -15,11 +15,8 @@
 <link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
 {% endifinstalled %}
 
-<link rel="stylesheet" href="{% static "css/screen.css" %}">
-
-
-
 {% compress css %}
+<link rel="stylesheet" href="{% static "css/screen.css" media="screen" %}">
 <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
 <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
 <link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">
@@ -36,29 +33,22 @@
 {% endcompress %}
 
 {% compress js %}
-<!-- Modernizer -->
-<script src="{% static "js/modernizr.custom.31141.js" %}"></script>
-
-<!-- GMaps -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNTSMEOij97Zpc3vSSkP1pXOIWg8tH-gA&sensor=false"></script>
-  <!--[if (gte IE 6)&(lte IE 8)]>
-    <script type="text/javascript"src="assets/js/selectivizr-min.js"></script>
-    <script src="assets/js/respond.min.js"></script>
-  <![endif]-->
-<script src="{% static "js/jquery.tools.min.js" %}"></script>
-<script src="{% static "js/jquery.simpleplaceholder.js" %}"></script>
-<script src="{% static "js/app.js" %}"></script>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-<!-- <script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script> -->
+<script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
 <script src="{% static "js/bootstrap.js" %}"></script>
 <script src="{% static "js/bootstrap-extras.js" %}"></script>
 {% block extra_js %}{% endblock %}
 {% endcompress %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript"src="assets/js/selectivizr-min.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+  <script src="{% static "js/jquery.tools.min.js" %}"></script>
+  <script src="{% static "js/jquery.simpleplaceholder.js" %}"></script>
+  <script src="{% static "js/app.js" %}"></script>
+
 <!--[if lt IE 9]>
 <script src="{% static "js/html5shiv.js" %}"></script>
-<script src="{% static "js/respond.min.js" %}"></script>
 <![endif]-->
 
 {% block extra_head %}{% endblock %}
@@ -67,7 +57,7 @@
 <body id="{% block body_id %}body{% endblock %}">
 
 <div class="navbar navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="wrapper">
         <div class="navbar-header my-navbar">
             {% nevercache %}
                 {% include "includes/user_panel.html" %}
@@ -76,7 +66,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="wrapper">
 
 {% nevercache %}
 {% if messages %}
@@ -91,13 +81,13 @@
 {% endif %}
 {% endnevercache %}
 
-<div class="logo span4">
+<div class="logo">
     <a href="{% url "home" %}">
         <img src="{{ MEDIA_URL }}uploads/logo.png">
         </a>
     </div>
 
-    <div class="my-menu span6">
+    <div class="my-menu">
         {% page_menu "pages/menus/dropdown.html" %}
     </div>
 
@@ -112,7 +102,7 @@
 {% block feature_box %}<div class="feature_box"></div>{% endblock %}
 
 
-<div class="container">
+<div class="wrapper">
     <div class="row">
         {% block feed_panel %}
         <div class="col-md-9 middle">
