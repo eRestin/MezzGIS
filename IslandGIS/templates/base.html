@@ -33,12 +33,14 @@
 {% endcompress %}
 
 {% compress js %}
+<!--
 <script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
+-->
 <script src="{% static "js/bootstrap.js" %}"></script>
 <script src="{% static "js/bootstrap-extras.js" %}"></script>
 {% block extra_js %}{% endblock %}
 {% endcompress %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <!--[if (gte IE 6)&(lte IE 8)]>
     <script type="text/javascript"src="assets/js/selectivizr-min.js"></script>
     <script src="assets/js/respond.min.js"></script>
@@ -54,11 +56,11 @@
 {% block extra_head %}{% endblock %}
 </head>
 
-<body id="{% block body_id %}body{% endblock %}">
+<body id="{% block body_id %}index{% endblock %}">
 
 <div class="navbar navbar-fixed-top" role="navigation">
     <div class="wrapper">
-        <div class="navbar-header my-navbar">
+        <div class="carret navbar-header my-navbar">
             {% nevercache %}
                 {% include "includes/user_panel.html" %}
             {% endnevercache %}
