@@ -1,0 +1,53 @@
+// Home Page Client Lists styles
+.clients {
+  display: none;
+  text-align: center;
+  padding: em(60) 0;
+  @include media($medium-screen) {
+    display: block;
+  }
+}
+.client__item {
+  float: left;
+  margin: 0 em(16);
+}
+.clients__title {
+  font-size: em(21);
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: em(30);
+}
+
+
+// Client Page Styles
+.client-logos {
+  @include clearfix;
+  clear: both;
+  margin-top: 50px;
+}
+.client-logos__item {
+  border: 1px solid $light-gray;
+  margin-bottom: 1em;
+  width: 88.4375%; /* 283/320 */
+  @include media($medium-screen) {
+    width: 30%; /* 294/940 */
+    float: left;
+    // height: em(180);
+    height: em(135);
+    margin: 0 28px 28px 0;
+  }
+  @include media($large-screen) {
+    width: 31%; /* 294/940 */
+    height: em(180);
+  }
+  & > a {
+    opacity: .6;
+    @include transition (all .26s ease-in-out);
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &.omega {
+    margin-right: 0;
+  }
+}

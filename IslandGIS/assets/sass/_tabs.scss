@@ -1,0 +1,73 @@
+.tab__controls {
+  display: none;
+  @include media($medium-screen) {
+    display: block;
+  }
+}
+.tabs {
+  background-color: $dark-gray;
+  min-height: em(375);
+  color: #fff;
+}
+.tab__links {
+  overflow: auto;
+  width: 100%;
+  color: $dark-gray;
+  padding: 0 em(10);
+}
+.tab__link {
+  background-color: $light-gray;
+  color: $dark-gray;
+  float: left;
+  margin-right: 2px;
+  width: 24.5%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+  @include transition (all .3s ease-in-out);
+  &.active {
+    background-color: $dark-gray;
+    color: #fff;
+    &:hover {
+      background-color: $dark-gray;
+    }
+  }
+  &:hover {
+    background-color: lighten($dark-gray, 30);
+    color: #fff;
+  }
+}
+.tab {
+  padding: em(60) em(10);
+
+  img {
+    margin-bottom: 1em;
+    @include media($medium-screen) {
+      width: 50%;
+      margin-bottom: 0;
+      margin-right: em(30);
+      float: left;
+    }
+    @include media($large-screen) {
+      width: auto;
+      margin-right: em(60);
+    }
+  }
+}
+.tab__text {
+  // float: left;
+  h2 {
+    text-transform: uppercase;
+    font-size: em(23);
+    margin-bottom: .8em;
+    @include media($medium-screen) {
+      font-size: em(27);
+    }
+    @include media($large-screen) {
+      font-size: em(33);
+    }
+  }
+  .button {
+    margin-top: em(20);
+  }
+}

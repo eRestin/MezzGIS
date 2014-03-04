@@ -1,0 +1,88 @@
+.blog__item {
+  margin-bottom: em(60);
+  background: transparent url(../../images/icons/twitter.png) top left no-repeat;
+  img {
+    margin: 1.2em 0;
+  }
+  @include media($medium-screen) {
+    padding-left: em(50);
+  }
+}
+.blog__date {
+  font-size: em(14);
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: em(3px) 0;
+  padding-left: em(50);
+  @include media($medium-screen) {
+    padding-left: 0;
+  }
+}
+.blog__date--detail {
+  margin-bottom: em(30);
+}
+.blog__title {
+  @extend .blog__date;
+  // padding-left: em(50);
+  // @include media($medium-screen) {
+  //   padding-left: 0;
+  // }
+}
+.more {
+  clear: both;
+  text-align: center;
+  padding-top: em(50);
+}
+.key {
+  margin-bottom: em(18);
+}
+.key--detail {
+  margin-top: 0;
+  .key__item--tweet {
+    margin-top: 0;
+  }
+}
+.key__item {
+  font-size: em(16);
+  text-transform: uppercase;
+  color: $text-green;
+  background: transparent url(../../images/icons/twitter.png) top left no-repeat;
+  padding-left: em(50);
+  height: em(35);
+  margin-bottom: em(15);
+  line-height: 1;
+  padding-top: em(10);
+}
+.key__item--tweet {
+  margin-top: em(50);
+}
+.tweet {
+  margin-bottom: em(20);
+  font-size: em(13, 14);
+  word-wrap: break-word;
+  a {
+    font-size: em(13, 13);
+    word-wrap: break-word;
+  }
+}
+.tweet__date {
+  text-transform: uppercase;
+  display: block;
+  font-style: normal;
+}
+.blog__item--press, .key__item--press {
+  background-image: url(../../images/icons/press.png);
+  background-image: url(../../images/icons/press.svg), none;
+}
+.blog__item--news, .key__item--news {
+  background-image: url(../../images/icons/news.png);
+  background-image: url(../../images/icons/news.svg), none;
+}
+.blog__item--event, .key__item--event {
+  background-image: url(../../images/icons/event.png);
+  background-image: url(../../images/icons/event.svg), none;
+}
+.blog__item--article, .key__item--article {
+  background-image: url(../../images/icons/article.png);
+  background-image: url(../../images/icons/article.svg), none;
+}

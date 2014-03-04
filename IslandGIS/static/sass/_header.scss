@@ -1,0 +1,76 @@
+.login {
+  //height: em(20);
+  background-color: $dark-gray;
+  text-align: right;
+  a {
+    text-transform: uppercase;
+    font-size: em(11);
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    padding: 3px 10px 7px;
+  }
+}
+.banner {
+  text-align: center;
+  @include span-columns(12);
+  padding: em(18) em(10);
+  @include media($medium-screen) {
+    text-align: left;
+  }
+}
+.logo {
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-left: 11px;
+  @include media($medium-screen) {
+    width: 243px;
+    margin-left: 23px;
+  }
+}
+.mobile-menu__trigger {
+  width: 30px;
+  opacity: .7;
+  position: absolute;
+  top: 53px;
+  right: 20px;
+  cursor: pointer;
+  @include media($medium-screen) {
+    display: none;
+  }
+}
+.nav {
+  margin-top: em(25);
+  padding-top: em(20);
+  clear: both;
+  display: none;
+  @include media($medium-screen) {
+    float: right;
+    display: block;
+    padding-top: 0;
+    clear: none;
+  }
+  a {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    padding: 6px;
+    background-color: lighten($light-green, 2%);
+    margin-bottom: 2px;
+
+    @include media($medium-screen) {
+      font-size: em(17);
+      margin-left: 0.75em;
+      display: inline-block;
+      padding: 0;
+      background-color: transparent;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    @include media($large-screen) {
+      margin-left: 2.375em;
+    }
+  }
+}

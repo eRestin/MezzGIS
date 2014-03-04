@@ -1,0 +1,33 @@
+// Neat Overrides
+///////////////////////////////////////////////////////////////////////////////
+// $column: 90px;
+// $gutter: 30px;
+$grid-columns: 12;
+$max-width: em(980);
+
+
+//**** Neat Visual Grid ****
+// $visual-grid: true;
+// $visual-grid-index: front;
+// $visual-grid-opacity: 0.1;
+// $visual-grid-color: red;
+
+
+
+// Neat Breakpoints
+///////////////////////////////////////////////////////////////////////////////
+// $small-screen: new-breakpoint(min-width em(540) 2);
+// $medium-screen: new-breakpoint(min-width em(760) 4);
+// $large-screen: new-breakpoint(min-width em(920) 8);
+
+$small-screen: new-breakpoint(min-width em(540));
+$medium-screen: new-breakpoint(min-width em(760));
+$large-screen: new-breakpoint(min-width em(920));
+
+
+
+// My old ones for ref
+// $desktop: min-width 850px;
+// $tablet: min-width 750px;
+// $tablet-only: min-width 750px max-width 849px;
+// $mobile-only: max-width 749px;

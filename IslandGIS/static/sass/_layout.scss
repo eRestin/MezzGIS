@@ -1,0 +1,58 @@
+.wrapper {
+  @include outer-container;
+}
+.content {
+  .wrapper {
+    padding: em(40) em(20);
+  }
+  // font-size: em(14);
+  p {
+    font-size: em(14);
+    line-height: 1.5;
+  }
+  a {
+    font-size: 14px;
+  }
+}
+.content__main {
+  overflow: auto;
+}
+.main {
+  margin-right: 0;
+  @include media($medium-screen) {
+    @include span-columns(8);
+  }
+}
+.col {
+  @include media($medium-screen) {
+    @include span-columns(6);
+  }
+  &.slvzr-last-child {
+    margin-right: 0;
+  }
+}
+.aside {
+  display: none;
+  @include media($medium-screen) {
+    display: block;
+    @include span-columns(3);
+    @include shift(1);
+    @include omega();
+  }
+}
+
+.button {
+  display: inline-block;
+  color: #fff;
+  background-color: $dark-green;
+  padding: em(16) em(25);
+  font-style: italic;
+  @include transition (all .26s ease-in-out);
+  &:hover {
+    background-color: #e2ebd8;
+  }
+}
+.button--fixed-width {
+  width: 195px;
+  margin: 10px 10px;
+}

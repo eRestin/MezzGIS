@@ -1,0 +1,46 @@
+// Typography
+///////////////////////////////////////////////////////////////////////////////
+$sans-serif: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+$serif: $georgia;
+
+$base-font-family: $sans-serif;
+$header-font-family: $base-font-family;
+
+// Sizes
+///////////////////////////////////////////////////////////////////////////////
+$base-font-size: 1em;
+$base-line-height: $base-font-size * 1.5;
+$base-border-radius: em(3);
+
+// Colors
+///////////////////////////////////////////////////////////////////////////////
+$very-light-gray: #f9f9f9;
+$light-gray: #ebebeb;
+$dark-gray: #6b6967;
+$light-green: #e2ebd8;
+$dark-green: #a1c379;
+$hero-green: #eaf0e3;
+$text-green: #a3c379;
+
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+
+
+// Body Color
+$base-body-color: white;
+
+//  Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $text-green;
+
+//  Text Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: #9f914f;
+
+// Border color
+$base-border-color: #e4e4e4;
+
+// Flash Colors
+$error-color: $light-red;
+$notice-color: $light-yellow;
+$success-color: $light-green;

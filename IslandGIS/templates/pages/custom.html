@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% load mezzanine_tags keyword_tags %}
+
+{% block main %}{{ block.super }}
+{% editable page.richtextpage.content %}
+{{ page.richtextpage.content|safe }}
+{% endeditable %}
+{% endblock main %}

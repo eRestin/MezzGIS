@@ -1,0 +1,40 @@
+.features {
+  background-color: $light-gray;
+  text-align: center;
+}
+.feature {
+  text-align: left;
+  float: left;
+  margin: 10px 10px;
+  background-color: transparent;
+  @include media($medium-screen) {
+    width: 30.612244897959%; /* 300/980 */
+    margin: 50px 10px;
+  }
+}
+.feature__text {
+  background-color: $very-light-gray;
+  margin-top: 3px;
+  padding: em(20, 19);
+  border: 1px solid $base-border-color;
+  p {
+    font-size: em(14);
+    line-height: 1.3;
+  }
+  a {
+    font-size: em(15);
+    font-style: italic;
+  }
+}
+.feature__title {
+  font-size: em(19);
+  font-style: italic;
+  color: #fff;
+  background-color: $dark-gray;
+  padding: em(20, 19);
+}
+.feature__title--sub {
+  font-size: em(16);
+  font-weight: normal;
+  margin-bottom: 1em;
+}

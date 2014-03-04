@@ -1,0 +1,62 @@
+.formelement {
+  background-color: $light-gray;
+  font-size: em(14);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 20px;
+  line-height: 1;
+}
+.contact__title {
+  text-transform: uppercase;
+  font-size: em(16);
+  font-weight: normal;
+  margin-bottom: .4em;
+  @include media($medium-screen) {
+    margin-bottom: .8em;
+  }
+}
+
+textarea {
+  @extend .formelement;
+  &:focus {
+    border-color: $light-gray;
+    box-shadow: none;
+    outline: none;
+  }
+}
+input[type="text"], input[type="tel"], input[type="email"] {
+  @extend .formelement;
+  float: left;
+  margin: 0 20px 20px 0;
+  &.omega {
+    margin-right: 0;
+  }
+  @include media($large-screen) {
+    width: 48.3%;
+  }
+}
+input[type="submit"] {
+  &.button {
+    border: none;
+    width: em(190);
+    &:hover {
+      color: $hover-link-color;
+    }
+  }
+  @include media($medium-screen) {
+    float: right;
+  }
+}
+
+.address {
+  clear: both;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  @include media($medium-screen) {
+    padding-top: 0;
+  }
+}
+.sm--sidebar {
+  margin-left: 0;
+}

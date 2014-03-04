@@ -16,6 +16,7 @@
 {% endifinstalled %}
 
 {% compress css %}
+<link rel="stylesheet" href="{% static "css/screen.css" %}">
 <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
 <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
 <link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">
@@ -35,12 +36,24 @@
 <script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
 <script src="{% static "js/bootstrap.js" %}"></script>
 <script src="{% static "js/bootstrap-extras.js" %}"></script>
+<script src="{% static "js/modernizr.custom.31141.js" %}"></script>
+<script src="{% static "js/jquery.tools.min.js" %}"></script>
+<script src="{% static "js/jquery.simpleplaceholder.js" %}"></script>
+<script src="{% static "js/app.js" %}"></script>
+
 {% block extra_js %}{% endblock %}
 {% endcompress %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript"src="assets/js/selectivizr-min.js"></script>
+  <![endif]-->
 <!--[if lt IE 9]>
 <script src="{% static "js/html5shiv.js" %}"></script>
 <script src="{% static "js/respond.min.js" %}"></script>
 <![endif]-->
+
+<!-- GMaps -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNTSMEOij97Zpc3vSSkP1pXOIWg8tH-gA&sensor=false"></script>
 
 {% block extra_head %}{% endblock %}
 </head>

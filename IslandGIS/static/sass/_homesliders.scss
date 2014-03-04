@@ -1,0 +1,65 @@
+/*
+root element for the scrollable.  when scrolling occurs this
+element stays still.
+*/
+.scrollable {
+  /* required settings */
+  position:relative;
+  overflow:hidden;
+  width: 85.9375%;
+  height: 63px;
+  margin: 0 auto;
+  float: left;
+}
+
+/*
+root element for scrollable items. Must be absolutely positioned
+and it should have a extremely large width to accommodate scrollable
+items.  it's enough that you set width and height for the root element
+and not for this element.
+*/
+.scrollable .items {
+  /* this cannot be too large */
+  width:20000em;
+  position:absolute;
+}
+
+/*
+a single item. must be floated in horizontal scrolling.  typically,
+this element is the one that *you* will style the most.
+*/
+.items div {
+  float:left;
+  width: 860px;
+  img {
+    margin: 0 10px;
+    opacity: .7;
+    max-width: 130px;
+  }
+}
+
+.browse {
+  width: 30px;
+  height: 63px;
+  float: left;
+  background: transparent url(../../images/icons/slider-prev.png) 0 0 no-repeat;
+  cursor: pointer;
+  text-indent: -3000px;
+  opacity: .7;
+  margin-right: 10px;
+  @include transition (all .2s ease-in-out);
+  &.next {
+    float: right;
+    background-image: url(../../images/icons/slider-next.png);
+    margin-right: 0;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+.slider__wrapper {
+  @include media($medium-screen) {
+    display: block;
+    padding: 0 29px 0 10px;
+  }
+}
