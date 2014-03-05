@@ -517,6 +517,9 @@ float the buttons inside it. This prevents collapsing. */
 .footy {
   font-size: 0.8875em;
 }
+.foot_margins {
+  margin-left: 20px;
+}
 .social-img {
   width: 35px;
 }
