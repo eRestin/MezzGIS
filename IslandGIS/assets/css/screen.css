@@ -220,10 +220,10 @@ dl dd { margin: 0; }
 .content__main { overflow: auto; }
 
 .main { margin-right: 0; }
-@media screen and (min-width: 47.5em) { .main { float: left; display: block; margin-right: 2.35765%; width: 65.88078%; }
+@media screen and (min-width: 47.5em) { .main { float: left; display: block; margin-right: 1.15765%; width: 65.88078%; }
   .main:last-child { margin-right: 0; } }
 
-@media screen and (min-width: 47.5em) { .col { float: left; display: block; margin-right: 2.35765%; width: 48.82117%; }
+@media screen and (min-width: 47.5em) { .col { float: left; display: block; margin-right: 1.15765%; width: 48.82117%; }
   .col:last-child { margin-right: 0; } }
 .col.slvzr-last-child { margin-right: 0; }
 
