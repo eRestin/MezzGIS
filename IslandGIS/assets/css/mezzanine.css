@@ -563,3 +563,6 @@ float the buttons inside it. This prevents collapsing. */
 label.control-label {
   display: none!important;
 }
+.menu_focus {
+  margin: 0px!important;
+}

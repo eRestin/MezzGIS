@@ -3,5 +3,7 @@ IslandGIS/.DS_Store
 IslandGIS/*.pyc
 IslandGIS/dev.db
 IslandGIS/static/media/uploads/.thumbnails
+IslandGIS/static/media/uploads/partners/.thumbnails
+IslandGIS/static/media/uploads/clients/.thumbnails
 IslandGIS/static/media/uploads/galleries/.thumbnails
 IslandGIS/static/css/
