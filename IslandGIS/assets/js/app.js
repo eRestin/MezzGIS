@@ -179,7 +179,7 @@ $(function() {
               animation: google.maps.Animation.DROP,
               map: map,
               title: location[0],
-              icon: '/images/icons/map-marker.png',
+              icon: '../../static/media/uploads/icons/map-marker.png',
               html: location[4]
           });
           var boxText = document.createElement("div");
@@ -317,7 +317,7 @@ $(function() {
               animation: google.maps.Animation.DROP,
               map: map,
               title: location[0],
-              icon: '/images/icons/map-marker.png'
+              icon: '../../static/media/uploads/icons/map-marker.png'
           });
 
           gmarkers.push(marker);
