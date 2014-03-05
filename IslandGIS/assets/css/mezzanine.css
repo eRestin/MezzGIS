@@ -17,7 +17,7 @@ h1 {
   right: 0;
 }
 ul, ol {
-  padding-left:20px;
+  /* padding-left:20px; */
 }
 .tree {
   padding: 5px 0;
@@ -69,10 +69,12 @@ ul, ol {
   padding: 10px 0;
 }
 footer {
+  /*
   background-color: #E2EBDE;
   border-top: 1px solid #E7E7E7;
   margin-top: 15px;
   padding: 15px 0 30px;
+  */
 }
 footer .separator {
   opacity: 0.3;
@@ -476,12 +478,6 @@ float the buttons inside it. This prevents collapsing. */
 /*========================================
         MY STYLES
 ==========================================*/
-.logo {
-  float: left;
-}
-.mappy {
-
-}
 .grey {
   background-color: #EBEBEB;
   height: 120px;
