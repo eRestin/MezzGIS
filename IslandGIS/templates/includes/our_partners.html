@@ -1,40 +1,41 @@
 {% load i18n %}
 
-<div class="tabs_box">
-	<div class="container">
-	<section class="tabs" id="tabs_container">
-      <div id="tabs-1" class="tab">
-        <img src="{{ MEDIA_URL }}uploads/Home-Tab-Sample.jpg" alt="">
-        <div class="tab__text">
-          <h2>Cairn Energy PLC</h2>
-          <p>Island GIS supported Cairn Energy Plc in setting up and supporting an Operations portal to manage and visualise all GIS mapping and mobile assets for major offshore operations.</p>
-          <a href="services/oil-gas" class="tab_button">View Case Study</a>
-        </div>
-      </div>
-      <div id="tabs-2" class="tab">
-        <img src="{{ MEDIA_URL }}uploads/Home-Tab-Sample.jpg" alt="">
-        <div class="tab__text">
-          <h2>Tab 2 Title</h2>
-          <p>Island GIS supported Cairn Energy Plc in setting up and supporting an Operations portal to manage and visualise all GIS mapping and mobile assets for major offshore operations.</p>
-          <a href="services/renewables" class="tab_button">View Case Study</a>
-        </div>
-      </div>
-      <div id="tabs-3" class="tab">
-        <img src="{{ MEDIA_URL }}uploads/Home-Tab-Sample.jpg" alt="">
-        <div class="tab__text">
-          <h2>Tab 3 Title</h2>
-          <p>Island GIS supported Cairn Energy Plc in setting up and supporting an Operations portal to manage and visualise all GIS mapping and mobile assets for major offshore operations.</p>
-          <a href="services/utilities" class="tab_button">View Case Study</a>
-        </div>
-      </div>
-      <div id="tabs-4" class="tab">
-        <img src="{{ MEDIA_URL }}uploads/Home-Tab-Sample.jpg" alt="">
-        <div class="tab__text">
-          <h2>Tab 4 Title</h2>
-          <p>Island GIS supported Cairn Energy Plc in setting up and supporting an Operations portal to manage and visualise all GIS mapping and mobile assets for major offshore operations.</p>
-          <a href="services/maritime" class="tab_button">View Case Study</a>
-        </div>
-      </div>
-    </section>
-	</div>
-</div>
+<div class="clients">
+      <section class="wrapper slider__wrapper">
+        <h3 class="clients__title">Our Partners</h3>
+
+        <!-- "previous page" action -->
+        <a class="prev browse left">PREV</a>
+
+        <!-- root element for scrollable -->
+        <div class="scrollable" id="scrollable">
+
+          <!-- root element for the items -->
+          <div class="items">
+
+            <!-- 1-5 -->
+            <div>
+              <img src="{{ MEDIA_URL }}uploads/logos/AberdeenGrampianChamberofCommerce.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/SafeContractorApproved.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/RoyalGeographicalSociety.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/Google.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/ScottishOilClub.gif" />
+            </div>
+
+            <!-- 5-10 -->
+            <div>
+              <img src="{{ MEDIA_URL }}uploads/logos/AGI.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/EdinChamberofCom.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/EsriPartner.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/MobileHealthcareNetworks.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/AberdeenGrampianChamberofCommerce.gif" />
+            </div>
+
+          </div> <!-- / items -->
+
+        </div> <!-- / scrollable -->
+
+        <!-- "next page" action -->
+        <a class="next browse right">NEXT</a>
+      </section>
+    </div>

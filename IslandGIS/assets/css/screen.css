@@ -303,8 +303,8 @@ this element is the one that *you* will style the most.
 .items div { float: left; width: 860px; }
 .items div img { margin: 0 10px; opacity: .7; max-width: 130px; }
 
-.browse { width: 30px; height: 63px; float: left; background: transparent url(../../images/icons/slider-prev.png) 0 0 no-repeat; cursor: pointer; text-indent: -3000px; opacity: .7; margin-right: 10px; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
-.browse.next { float: right; background-image: url(../../images/icons/slider-next.png); margin-right: 0; }
+.browse { width: 30px; height: 63px; float: left; background: transparent url(../../static/media/uploads/icons/slider-prev.png) 0 0 no-repeat; cursor: pointer; text-indent: -3000px; opacity: .7; margin-right: 10px; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.browse.next { float: right; background-image: url(../../static/media/uploads/icons/slider-next.png); margin-right: 0; }
 .browse:hover { opacity: 1; }
 
 @media screen and (min-width: 47.5em) { .slider__wrapper { display: block; padding: 0 29px 0 10px; } }

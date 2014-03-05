@@ -1,0 +1,41 @@
+{% load i18n %}
+
+<div class="clients">
+      <section class="wrapper slider__wrapper">
+        <h3 class="clients__title">Our Clients</h3>
+
+        <!-- "previous page" action -->
+        <a class="prev browse left">PREV</a>
+
+        <!-- root element for scrollable -->
+        <div class="scrollable" id="scrollable">
+
+          <!-- root element for the items -->
+          <div class="items">
+
+            <!-- 1-5 -->
+            <div>
+              <img src="{{ MEDIA_URL }}uploads/logos/BalfourBeatty.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/Cairn.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/Defra.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/EDF.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/MaerskOil.gif" />
+            </div>
+
+            <!-- 5-10 -->
+            <div>
+              <img src="{{ MEDIA_URL }}uploads/logos/SSE.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/BalfourBeatty.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/Cairn.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/Defra.gif" />
+              <img src="{{ MEDIA_URL }}uploads/logos/EDF.gif" />
+            </div>
+
+          </div> <!-- / items -->
+
+        </div> <!-- / scrollable -->
+
+        <!-- "next page" action -->
+        <a class="next browse right">NEXT</a>
+      </section>
+    </div>
