@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
 {% load pages_tags mezzanine_tags i18n future staticfiles %}
-
+{% block head %}
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,8 +61,10 @@
 <![endif]-->
 
 {% block extra_head %}{% endblock %}
+{% endblock %}
 </head>
 
+{% block navhead %}
 <body id="{% block body_id %}index{% endblock %}">
 
 <div class="navbar navbar-fixed-top" role="navigation">
@@ -74,7 +76,7 @@
         </div>
     </div>
 </div>
-
+{% endblock %}
 <div class="wrapper">
 
 {% nevercache %}
@@ -132,6 +134,7 @@
         {% endblock %}
     </div>
 </div>
+
 
 {% block footer %}
 <div class="footer">

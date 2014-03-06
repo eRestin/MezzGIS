@@ -1,0 +1,21 @@
+{% extends "pages/page.html" %}
+{% load mezzanine_tags %}
+<body id="{% block body_id %}contact{% endblock %}">
+{% block grey %}{% endblock %}
+
+{% block map %}
+<div class="hero hero--map">
+        <div id="contact-map"></div>
+    </div>
+{% endblock %}
+{% block main %}{{ block.super }}
+
+<form method="POST">
+    <table>
+        {% csrf_token %}
+        {{ flexiform_FeedbackForm.as_table }}
+        <tr><td><input type="submit"></input></td></tr>
+    </table>
+</form>
+{% endblock %}
+
