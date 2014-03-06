@@ -5,8 +5,9 @@
 {% if categories %}
 <ul class="list-unstyled">
 {% for category in categories %}
-<li><a href="{% url "blog_post_list_category" category.slug %}"
-    ><h3>{{ category }}</h3></a></li>
+<li>
+    <a href="{% url "blog_post_list_category" category.slug %}"><h3><img src="/static/{{ category }}.png" alt="{{category}}"/> {{ category }}</h3></a>
+</li>
 {% endfor %}
 </ul>
 {% endif %}
