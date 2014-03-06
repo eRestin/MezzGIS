@@ -1,7 +1,7 @@
 *.pyc
 .DS_Store
 IslandGIS/.DS_Store
-IslandGIS/dev.db
+
 IslandGIS/static/media/uploads/.thumbnails
 IslandGIS/static/media/uploads/partners/.thumbnails
 IslandGIS/static/media/uploads/clients/.thumbnails
