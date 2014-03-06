@@ -1,4 +1,3 @@
-from __future__ import absolute_import, unicode_literals
 
 ######################
 # MEZZANINE SETTINGS #
@@ -92,10 +91,6 @@ ADMINS = (
 )
 MANAGERS = ADMINS
 
-# Hosts/domain names that are valid for this site; required if DEBUG is False
-# See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ['*']
-
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
@@ -103,7 +98,7 @@ ALLOWED_HOSTS = ['*']
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = "Europe/London"
+TIME_ZONE = None
 
 # If you set this to True, Django will use timezone-aware datetimes.
 USE_TZ = True
@@ -112,16 +107,10 @@ USE_TZ = True
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = "en"
 
-# Supported languages
-_ = lambda s: s
-LANGUAGES = (
-    ('en', _('English')),
-)
-
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py
-DEBUG = True
+DEBUG = False
 
 # Whether a user's session cookie expires when the Web browser is closed.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
@@ -131,6 +120,9 @@ SITE_ID = 1
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
 USE_I18N = False
+
+# Make this unique, and don't share it with anybody.
+SECRET_KEY = "392daa36-ea25-434d-8774-921d888f97d5ee647c9a-fc2d-4c44-a376-5801b209be1510b3eab8-20e4-41a1-9781-b2069be57685"
 
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true
@@ -150,21 +142,9 @@ AUTHENTICATION_BACKENDS = ("mezzanine.core.auth_backends.MezzanineBackend",)
 STATICFILES_FINDERS = (
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
-#   'django.contrib.staticfiles.finders.DefaultStorageFinder',
+#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
-# The numeric mode to set newly-uploaded files to. The value should be
-# a mode you'd pass directly to os.chmod.
-FILE_UPLOAD_PERMISSIONS = 0o644
-
-FILEBROWSER_EXTENSIONS = {
-    'Folder': [''],
-    'Image': ['.jpg','.jpeg','.gif','.png','.tif','.tiff'],
-    'Video': ['.mp4', '.mov','.wmv','.mpeg','.mpg','.avi','.rm'],
-    'Document': ['.pdf','.doc','.rtf','.txt','.xls','.csv'],
-    'Audio': ['.mp3','.wav','.aiff','.midi','.m4p', '.ogg'],
-    'Code': ['.html','.py','.js','.css']
-}
 
 #############
 # DATABASES #
@@ -173,9 +153,9 @@ FILEBROWSER_EXTENSIONS = {
 DATABASES = {
     "default": {
         # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
-        "ENGINE": "django.db.backends.sqlite3",
+        "ENGINE": "django.db.backends.",
         # DB name or path to database file if using sqlite3.
-        "NAME": "dev.db",
+        "NAME": "",
         # Not used with sqlite3.
         "USER": "",
         # Not used with sqlite3.
@@ -214,12 +194,6 @@ STATIC_URL = "/static/"
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
 STATIC_ROOT = os.path.join(PROJECT_ROOT, STATIC_URL.strip("/"))
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'assets'),
-)
-
-#STATIC_ROOT = ''
-#STATICFILES_DIRS = (os.path.join('static'),)
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -229,6 +203,11 @@ MEDIA_URL = STATIC_URL + "media/"
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, *MEDIA_URL.strip("/").split("/"))
+
+# URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
+# trailing slash.
+# Examples: "http://foo.com/media/", "/media/".
+ADMIN_MEDIA_PREFIX = STATIC_URL + "grappelli/"
 
 # Package/module name to import the root urlpatterns from for the project.
 ROOT_URLCONF = "%s.urls" % PROJECT_DIRNAME
@@ -262,14 +241,10 @@ INSTALLED_APPS = (
     "mezzanine.pages",
     "mezzanine.galleries",
     "mezzanine.twitter",
-    "mezzanine.accounts",
-    "flexipage", # Add the flexipage app
+    #"mezzanine.accounts",
     #"mezzanine.mobile",
 )
-FLEXI_TEMPLATES = (
-     ('start.html','start'),
-     ('tabs.html','tabs'),
- )
+
 # List of processors used by RequestContext to populate the context.
 # Each one should be a callable that takes the request object as its
 # only parameter and returns a dictionary to add to the context.
@@ -291,13 +266,12 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 MIDDLEWARE_CLASSES = (
     "mezzanine.core.middleware.UpdateCacheMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "django.middleware.locale.LocaleMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.redirects.middleware.RedirectFallbackMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "mezzanine.core.request.CurrentRequestMiddleware",
-    "mezzanine.core.middleware.RedirectFallbackMiddleware",
     "mezzanine.core.middleware.TemplateForDeviceMiddleware",
     "mezzanine.core.middleware.TemplateForHostMiddleware",
     "mezzanine.core.middleware.AdminLoginInterfaceSelectorMiddleware",
@@ -349,8 +323,6 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 #     "REPO_URL": "", # Git or Mercurial remote repo URL for the project
 #     "DB_PASS": "", # Live database password
 #     "ADMIN_PASS": "", # Live admin user password
-#     "SECRET_KEY": SECRET_KEY,
-#     "NEVERCACHE_KEY": NEVERCACHE_KEY,
 # }
 
 
