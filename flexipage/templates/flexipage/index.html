@@ -34,36 +34,36 @@
       <div id="tabs-1" class="tab">
         <img src="{{ MEDIA_URL }}uploads/Home-Tab-Sample.jpg" alt="">
         <div class="tab__text">
-        	{% editable flexi_content_field1.content %}
+        	<p>{% editable flexi_content_field1.content %}
         	{{flexi_content_field1.content|richtext_filter|safe}}
-        	{% endeditable %}
+        	{% endeditable %}</p>
           <a href="services/oil-gas" class="button">View Case Study</a>
         </div>
       </div>
       <div id="tabs-2" class="tab">
         <img src="{{ MEDIA_URL }}uploads/Home-Tab-Sample.jpg" alt="">
         <div class="tab__text">
-        	{% editable flexi_content_field2.content %}
+        	<p>{% editable flexi_content_field2.content %}
         	{{flexi_content_field2.content|richtext_filter|safe}}
-        	{% endeditable %}
+        	{% endeditable %}</p>
           <a href="services/renewables" class="button">View Case Study</a>
         </div>
       </div>
       <div id="tabs-3" class="tab">
         <img src="{{ MEDIA_URL }}uploads/Home-Tab-Sample.jpg" alt="">
         <div class="tab__text">
-          {% editable flexi_content_field3.content %}
+          <p>{% editable flexi_content_field3.content %}
         	{{flexi_content_field3.content|richtext_filter|safe}}
-        	{% endeditable %}
+        	{% endeditable %}</p>
           <a href="services/utilities" class="button">View Case Study</a>
         </div>
       </div>
       <div id="tabs-4" class="tab">
         <img src="{{ MEDIA_URL }}uploads/Home-Tab-Sample.jpg" alt="">
         <div class="tab__text">
-        	{% editable flexi_content_field4.content %}
+        	<p>{% editable flexi_content_field4.content %}
         	{{flexi_content_field4.content|richtext_filter|safe}}
-        	{% endeditable %}
+        	{% endeditable %}</p>
           <a href="services/maritime" class="button">View Case Study</a>
         </div>
       </div>
@@ -81,10 +81,10 @@
             <h3 class="feature__title">Our Team</h3>
             <div class="feature__text">
             <h4 class="feature__title--sub">
-            {% editable flexi_content_field5.content %}
-        	{{flexi_content_field5.content|richtext_filter|safe}}
-        	{% endeditable %}
-            </p>
+            <p>{% editable flexi_content_field5.content %}
+             {{flexi_content_field5.content|richtext_filter|safe}}
+            {% endeditable %}</p>
+          </h4>
             <a href="team/our-team" class="feature__link">Read More</a>
             </div>
         </div>
@@ -92,10 +92,9 @@
             <h3 class="feature__title">Our Blog</h3>
             <div class="feature__text">
             <h4 class="feature__title--sub">
-            {% editable flexi_content_field6.content %}
-        	{{flexi_content_field6.content|richtext_filter|safe}}
-        	{% endeditable %}
-            </p>
+            <p>{% editable flexi_content_field6.content %}
+              {{flexi_content_field6.content|richtext_filter|safe}}
+             	{% endeditable %}</p>
             <a href="blog" class="feature__link">Read More</a>
             </div>
         </div>
@@ -103,10 +102,9 @@
             <h3 class="feature__title">Our Video</h3>
             <div class="feature__text">
             <h4 class="feature__title--sub">
-            {% editable flexi_content_field7.content %}
-        	{{flexi_content_field7.content|richtext_filter|safe}}
-        	{% endeditable %}
-            </p>
+            <p>{% editable flexi_content_field7.content %}
+              {{flexi_content_field7.content|richtext_filter|safe}}
+              {% endeditable %}</p>
             <a href="" class="feature__link">Read More</a>
             </div>
         </div>

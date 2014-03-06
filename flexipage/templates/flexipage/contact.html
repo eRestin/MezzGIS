@@ -31,12 +31,9 @@
   <aside class="aside pull-right">
           <div class="address">
             <h3 class="contact__title">Head Office</h3>
-            <p>1-2 Sciennes Gardens <br>
-              Edinburgh <br>
-              Scotland, UK <br>
-              EH9 1NR <br><br>
-              +44 (0) 131 667 5454 <br>
-              <a href="mailto:&#097;&#100;&#109;&#105;&#110;&#064;&#105;&#115;&#108;&#097;&#110;&#100;&#103;&#105;&#115;&#046;&#099;&#111;&#109;">&#097;&#100;&#109;&#105;&#110;&#064;&#105;&#115;&#108;&#097;&#110;&#100;&#103;&#105;&#115;&#046;&#099;&#111;&#109;</a></p>
+            <p>{% editable flexi_content_field1.content %}
+                {{flexi_content_field1.content|richtext_filter|safe}}
+              {% endeditable %}</p>
           </div>
 
           <h3 class="contact__title">Social</h3>
