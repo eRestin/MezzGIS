@@ -11,16 +11,16 @@
 {% block main %}{{ block.super }}
 
 <form method="POST">
-    <table>
+
         {% csrf_token %}
-        {{ flexiform_FeedbackForm.as_table }}
-        <tr><td><input type="submit"></input></td></tr>
-    </table>
+        {{ flexiform_FeedbackForm.as_p }}
+        <input type="submit"></input>
+
 </form>
 
   {% editable flexi_content_field1.content %}
     {{flexi_content_field1.content|richtext_filter|safe}}
-  {% endeditable %}
+    {% endeditable %}
 
 {% endblock %}
 

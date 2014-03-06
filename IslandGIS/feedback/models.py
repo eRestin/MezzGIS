@@ -4,7 +4,7 @@ class Feedback(Model):
     name    = CharField(max_length=1024)
     email   = CharField(max_length=1024)
     telephone = CharField(max_length=19)
-    address = CharField(max_length=1024)
+    address = CharField(max_length=19)
     content = TextField()
 
     def __unicode__(self):

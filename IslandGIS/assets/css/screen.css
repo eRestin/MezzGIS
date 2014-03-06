@@ -422,7 +422,7 @@ this element is the one that *you* will style the most.
 
 textarea:focus { border-color: #ebebeb; box-shadow: none; outline: none; }
 
-input[type="text"], input[type="tel"], input[type="email"] { float: left; margin: 0 20px 20px 0; }
+input[type="text"], input[type="tel"], input[type="email"] { margin: 0 20px 20px 0; }
 input[type="text"].omega, input[type="tel"].omega, input[type="email"].omega { margin-right: 0; }
 @media screen and (min-width: 57.5em) { input[type="text"], input[type="tel"], input[type="email"] { width: 48.3%; } }
 
