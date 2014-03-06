@@ -1,9 +1,10 @@
-from django.db.models import Model, TextField, CharField, DecimalField
+from django.db.models import Model, TextField, CharField
 
 class Feedback(Model):
     name    = CharField(max_length=1024)
     email   = CharField(max_length=1024)
-    telephone = DecimalField(max_digits=19, decimal_places=10)
+    telephone = CharField(max_length=19)
+    address = CharField(max_length=1024)
     content = TextField()
 
     def __unicode__(self):

@@ -4,7 +4,7 @@
 {% tweets_default as tweets %}
 
 {% if tweets %}
-<h3><img src="{{ MEDIA_URL }}uploads/twitter.png"><span class="green">{% trans "TWEETS" %}</span></h3>
+<h3><img src="{{ MEDIA_URL }}uploads/icons/twitter.png"><span class="green">{% trans "TWEETS" %}</span></h3>
 <ul class="list-unstyled tweets">
     {% for tweet in tweets %}
     <li class="tweet">
