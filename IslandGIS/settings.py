@@ -271,8 +271,8 @@ INSTALLED_APPS = (
     "feedback"
 )
 FLEXI_TEMPLATES = (
-     ('start.html','start'),
-     ('tabs.html','tabs'),
+     ('contact.html','contact'),
+     ('index.html','Home'),
 )
 
 FLEXI_FORMS = (

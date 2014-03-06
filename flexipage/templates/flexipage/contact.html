@@ -17,5 +17,10 @@
         <tr><td><input type="submit"></input></td></tr>
     </table>
 </form>
+
+  {% editable flexi_content_field1.content %}
+    {{flexi_content_field1.content|richtext_filter|safe}}
+  {% endeditable %}
+
 {% endblock %}
 
