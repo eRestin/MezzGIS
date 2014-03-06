@@ -13,12 +13,13 @@ from __future__ import absolute_import, unicode_literals
 
 # Controls the ordering and grouping of the admin menu.
 #
-# ADMIN_MENU_ORDER = (
-#     ("Content", ("pages.Page", "blog.BlogPost",
-#        "generic.ThreadedComment", ("Media Library", "fb_browse"),)),
-#     ("Site", ("sites.Site", "redirects.Redirect", "conf.Setting")),
-#     ("Users", ("auth.User", "auth.Group",)),
-# )
+ADMIN_MENU_ORDER = (
+    ("Content", ("pages.Page", "blog.BlogPost",
+    "generic.ThreadedComment", ("Media Library", "fb_browse"),)),
+    ("Site", ("sites.Site", "redirects.Redirect", "conf.Setting")),
+    ("Users", ("auth.User", "auth.Group",)),
+    ("Feedback", ("feedback.Feedback",)),
+)
 
 # A three item sequence, each containing a sequence of template tags
 # used to render the admin dashboard.
@@ -265,11 +266,18 @@ INSTALLED_APPS = (
     "mezzanine.accounts",
     "flexipage", # Add the flexipage app
     #"mezzanine.mobile",
+
+    #Our apps:
+    "feedback"
 )
 FLEXI_TEMPLATES = (
      ('start.html','start'),
      ('tabs.html','tabs'),
- )
+)
+
+FLEXI_FORMS = (
+    'feedback.forms.FeedbackForm',
+)
 # List of processors used by RequestContext to populate the context.
 # Each one should be a callable that takes the request object as its
 # only parameter and returns a dictionary to add to the context.
