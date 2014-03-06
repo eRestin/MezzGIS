@@ -2,6 +2,15 @@
 {% load mezzanine_tags %}
 <body id="{% block body_id %}contact{% endblock %}">
 {% block grey %}{% endblock %}
+{% block white %}
+  <div class="white">
+      <div class="hero--plain hero--plain__white">
+          <section class="wrapper">
+            <h2>Get in touch</h2>
+          </section>
+      </div>
+  </div>
+{% endblock %}
 
 {% block map %}
 <div class="hero hero--map">
@@ -10,17 +19,34 @@
 {% endblock %}
 {% block main %}{{ block.super }}
 
-<form method="POST">
+<div class="content">
 
+<div class="col-md-8 get-down">
+<form method="POST">
         {% csrf_token %}
         {{ flexiform_FeedbackForm.as_p }}
-        <input type="submit"></input>
-
+        <input class="button move-right" type="submit"></input>
 </form>
+</div>
+  <aside class="aside pull-right">
+          <div class="address">
+            <h3 class="contact__title">Head Office</h3>
+            <p>1-2 Sciennes Gardens <br>
+              Edinburgh <br>
+              Scotland, UK <br>
+              EH9 1NR <br><br>
+              +44 (0) 131 667 5454 <br>
+              <a href="mailto:&#097;&#100;&#109;&#105;&#110;&#064;&#105;&#115;&#108;&#097;&#110;&#100;&#103;&#105;&#115;&#046;&#099;&#111;&#109;">&#097;&#100;&#109;&#105;&#110;&#064;&#105;&#115;&#108;&#097;&#110;&#100;&#103;&#105;&#115;&#046;&#099;&#111;&#109;</a></p>
+          </div>
 
-  {% editable flexi_content_field1.content %}
-    {{flexi_content_field1.content|richtext_filter|safe}}
-    {% endeditable %}
+          <h3 class="contact__title">Social</h3>
+          <ul class="sm sm--sidebar">
+            <li class="sm__item"><a href="http://www.linkedin.com/company/island-gis"><img src="{{ MEDIA_URL }}uploads/linkedin.png" alt="Linkedin"></a></li>
+          <li class="sm__item"><a href="https://twitter.com/IslandGIS"><img src="{{ MEDIA_URL }}uploads/twitter.png" alt="Twitter"></a></li>
+          <li class="sm__item"><a href="https://plus.google.com/s/islandgis"><img src="{{ MEDIA_URL }}uploads/google.png" alt="Google+"></a></li>
+          </ul>
+        </aside>
 
+</div>
 {% endblock %}
 

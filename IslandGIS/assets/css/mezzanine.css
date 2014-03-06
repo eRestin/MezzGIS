@@ -486,6 +486,12 @@ float the buttons inside it. This prevents collapsing. */
   padding-top: 2.60em;
   font-size: 1.3125em;
 }
+.white {
+  background-color: #ffffff;
+}
+.get-down {
+  margin-bottom: 30px;
+}
 .my-menu {
   text-transform:uppercase;
   float:right;
@@ -558,4 +564,30 @@ label.control-label {
 }
 .menu_focus {
   margin: 0px!important;
+}
+form p {
+  display: inline;
+}
+.namesclass {
+  display: inline;
+  margin: 0px 0px 20px 0px!important;
+}
+.emailclass {
+  display: inline;
+  margin: 0px 0px 20px 0px!important;
+}
+.telephoneclass {
+  display: inline;
+  margin: 0px 0px 20px 0px!important;
+}
+.addressclass {
+  display: inline;
+  margin: 0px 0px 20px 0px!important;
+}
+.contentsclass {
+  width: 97.50%;
+  margin: 0px 0px 20px 0px!important;
+}
+.move-right {
+  margin-right: 15px;
 }
