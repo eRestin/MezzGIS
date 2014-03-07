@@ -33,9 +33,9 @@
 {% endcompress %}
 
 {% compress js %}
-<!--
+
 <script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
--->
+
 <script src="{% static "js/bootstrap.js" %}"></script>
 <script src="{% static "js/bootstrap-extras.js" %}"></script>
 {% block extra_js %}{% endblock %}
@@ -45,7 +45,7 @@
 
 <!-- GMaps -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNTSMEOij97Zpc3vSSkP1pXOIWg8tH-gA&sensor=false"></script>
-
+<!--
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <!--[if (gte IE 6)&(lte IE 8)]>
     <script type="text/javascript"src="assets/js/selectivizr-min.js"></script>
