@@ -24,7 +24,19 @@
 <div class="col-md-8 get-down">
 <form method="POST">
         {% csrf_token %}
-        {{ flexiform_FeedbackForm.as_p }}
+    <table>
+        <tr>
+            <td><ul class="feedback-error">{% for error in flexiform_FeedbackForm.errors.name %} <li>{{error}}</li> {% endfor %}</ul>{{ flexiform_FeedbackForm.name }}</td>
+            <td><ul class="feedback-error">{% for error in flexiform_FeedbackForm.errors.email %} <li>{{error}}</li> {% endfor %}</ul>{{ flexiform_FeedbackForm.email }}</td>
+        </tr>
+        <tr>
+            <td><ul class="feedback-error">{% for error in flexiform_FeedbackForm.errors.telephone %} <li>{{error}}</li> {% endfor %}</ul>{{ flexiform_FeedbackForm.telephone }}</td>
+            <td><ul class="feedback-error">{% for error in flexiform_FeedbackForm.errors.address %} <li>{{error}}</li> {% endfor %}</ul>{{ flexiform_FeedbackForm.address }}</td>
+        </tr>
+        <tr>
+            <td colspan=2><ul class="feedback-error">{% for error in flexiform_FeedbackForm.errors.content %} <li>{{error}}</li> {% endfor %}</ul>{{ flexiform_FeedbackForm.content }}</td>
+        </tr>
+    </table>
         <input class="button move-right" type="submit"></input>
 </form>
 </div>
