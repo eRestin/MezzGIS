@@ -565,6 +565,9 @@ label.control-label {
 .menu_focus {
   margin: 0px!important;
 }
+.for_blog_icon {
+  margin-left: -61px;
+}
 form p {
   display: inline;
 }
