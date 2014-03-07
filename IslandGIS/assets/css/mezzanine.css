@@ -571,19 +571,27 @@ label.control-label {
 form p {
   display: inline;
 }
+form td {
+  border-bottom: 0px;
+  padding: 0px;
+}
 .namesclass {
+  width: 94.4%!important;
   display: inline;
   margin: 0px 0px 20px 0px!important;
 }
 .emailclass {
+  width: 94.4%!important;
   display: inline;
   margin: 0px 0px 20px 0px!important;
 }
 .telephoneclass {
+  width: 94.4%!important;
   display: inline;
   margin: 0px 0px 20px 0px!important;
 }
 .addressclass {
+  width: 94.4%!important;
   display: inline;
   margin: 0px 0px 20px 0px!important;
 }
