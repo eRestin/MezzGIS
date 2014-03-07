@@ -264,6 +264,7 @@ INSTALLED_APPS = (
     "mezzanine.galleries",
     "mezzanine.twitter",
     "mezzanine.accounts",
+    "categorylink",
     "flexipage", # Add the flexipage app
     #"mezzanine.mobile",
 
