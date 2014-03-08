@@ -23,9 +23,18 @@
 
 {% block main %}
 
+{% with blog_post.categories.all as categories %}
+    {% if categories %}
+    {% for category in categories %}
+    <img class="col-md-1 for_blog_icon"src="/static/media/uploads/icons/{{ category|lower }}.png" alt="{{category}}"/>{% if not forloop.last %}, {% endif %}
+    {% endfor %}
+    {% endif %}
+{% endwith %}
+
+<h2 class="blog__title">{{ blog_post.title }}</h2>
 {% block blog_post_detail_postedby %}
 {% editable blog_post.publish_date %}
-<h6 class="post-meta">
+<h6 class="blog__date">
     {% trans "Posted by" %}:
     {% with blog_post.user as author %}
     <a href="{% url "blog_post_list_author" author %}">{{ author.get_full_name|default:author.username }}</a>

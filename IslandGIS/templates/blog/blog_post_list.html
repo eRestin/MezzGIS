@@ -86,7 +86,7 @@
 <div class="md-col-5">
 {% block blog_post_list_post_title %}
 {% editable blog_post.title %}
-<h2>
+<h2 class="blog__title">
     <a href="{{ blog_post.get_absolute_url }}">{{ blog_post.title }}</a>
 </h2>
 {% endeditable %}
@@ -95,7 +95,7 @@
 {% endblock %}
 {% block blog_post_list_post_metainfo %}
 {% editable blog_post.publish_date %}
-<h6 class="post-meta">
+<h6 class="blog__date">
     {% blocktrans with sometime=blog_post.publish_date|timesince %}{{ sometime }} ago{% endblocktrans %}
 </h6>
 {% endeditable %}
