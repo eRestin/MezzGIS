@@ -61,12 +61,12 @@ ul, ol {
 }
 .nav-footer > ul {
   display: inline-block;
-  width: 130px;
+  width: 110px;
   /* margin-left: 20px;
   vertical-align: top; */
 }
 .nav-footer > ul > li {
-  padding: 10px 0;
+  /* padding: 10px 0; */
 }
 footer {
   /*
@@ -478,6 +478,17 @@ float the buttons inside it. This prevents collapsing. */
 /*========================================
         MY STYLES
 ==========================================*/
+.img_left {
+  float: left;
+  margin-right: 10px;
+}
+.img_right {
+  float: right;
+  margin-left: 10px;
+}
+.column {
+
+}
 .grey {
   background-color: #EBEBEB;
   height: 120px;
