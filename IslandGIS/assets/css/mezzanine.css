@@ -621,3 +621,6 @@ form td {
 .blog__date {
   margin-top:-10px;
 }
+.blog_richtext {
+  display: none;
+}

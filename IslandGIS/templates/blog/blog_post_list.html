@@ -60,6 +60,7 @@
     {% endblock %}
     </p>
 {% else %}
+    <div class="blog_richtext">
     {% if page %}
     {% block blog_post_list_pagecontent %}
     {% editable page.richtextpage.content %}
@@ -67,6 +68,7 @@
     {% endeditable %}
     {% endblock %}
     {% endif %}
+    </div>
 {% endif %}
 
 {% for blog_post in blog_posts.object_list %}
