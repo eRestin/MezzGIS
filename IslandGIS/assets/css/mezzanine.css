@@ -627,3 +627,27 @@ form td {
 .blog_richtext {
   display: none;
 }
+.client_logo {
+  width: 29.45%;
+  height: 12.45em;
+  float: left;
+  margin: 0 28px 28px 0;
+}
+.partner_logo {
+  width: 29.45%;
+  height: 12.45em;
+  float: left;
+  margin: 0 28px 28px 0;
+}
+.client {
+  width: 29.45%;
+  height: 12.45em;
+  float: left;
+  margin: 0 28px 28px 0;
+}
+.partner {
+  width: 29.45%;
+  height: 12.45em;
+  float: left;
+  margin: 0 28px 28px 0;
+}
