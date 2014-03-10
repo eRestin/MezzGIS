@@ -627,27 +627,43 @@ form td {
 .blog_richtext {
   display: none;
 }
+a .client_logo:hover {
+  border: 1px solid #9F914F;
+}
 .client_logo {
   width: 29.45%;
   height: 12.45em;
   float: left;
   margin: 0 28px 28px 0;
+  border: 1px solid #EBEBEB;
+}
+a .partner_logo:hover {
+  border: 1px solid #9F914F;
 }
 .partner_logo {
   width: 29.45%;
   height: 12.45em;
   float: left;
   margin: 0 28px 28px 0;
+  border: 1px solid #EBEBEB;
+}
+a .client:hover {
+  border: 1px solid #9F914F;
 }
 .client {
   width: 29.45%;
   height: 12.45em;
   float: left;
   margin: 0 28px 28px 0;
+  border: 1px solid #EBEBEB;
+}
+a .partner:hover {
+  border: 1px solid #9F914F;
 }
 .partner {
   width: 29.45%;
   height: 12.45em;
   float: left;
   margin: 0 28px 28px 0;
+  border: 1px solid #EBEBEB;
 }
