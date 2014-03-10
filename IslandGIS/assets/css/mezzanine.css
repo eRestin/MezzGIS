@@ -188,8 +188,8 @@ img.pull-left {
 .post-meta > a {
   color: #666;
 }
-.share-facebook, .share-twitter,
-.share-facebook:hover, .share-twitter:hover {
+.share-facebook, .share-twitter, .share-google,
+.share-facebook:hover, .share-twitter:hover, .share-google:hover {
   color: #fff;
   font-weight: 700;
 }
@@ -198,6 +198,9 @@ img.pull-left {
 }
 .share-twitter {
     background-color: #00A3D4;
+}
+.share-google {
+    background-color: #f63e28;
 }
 .tag-weight-1 {
   font-size: 90%;

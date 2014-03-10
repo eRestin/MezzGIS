@@ -35,14 +35,17 @@
 {% block blog_post_detail_postedby %}
 {% editable blog_post.publish_date %}
 <h6 class="blog__date">
+    <!--
     {% trans "Posted by" %}:
     {% with blog_post.user as author %}
     <a href="{% url "blog_post_list_author" author %}">{{ author.get_full_name|default:author.username }}</a>
     {% endwith %}
+    -->
     {% blocktrans with sometime=blog_post.publish_date|timesince %}{{ sometime }} ago{% endblocktrans %}
 </h6>
 {% endeditable %}
 {% endblock %}
+<!--
 {% block blog_post_detail_commentlink %}
 <p>
     {% if blog_post.allow_comments %}
@@ -58,6 +61,7 @@
     {% endif %}
 </p>
 {% endblock %}
+-->
 
 {% block blog_post_detail_featured_image %}
 {% if settings.BLOG_USE_FEATURED_IMAGE and blog_post.featured_image %}
@@ -89,16 +93,19 @@
 {% endif %}
 {% endblock %}
 
+<!--
 <div class="panel panel-default rating">
     <div class="panel-body">
     {% rating_for blog_post %}
     </div>
 </div>
+-->
 
 {% block blog_post_detail_sharebuttons %}
 {% set_short_url_for blog_post %}
 <a class="btn btn-sm share-twitter" target="_blank" href="http://twitter.com/home?status={{ blog_post.short_url|urlencode }}%20{{ blog_post.title|urlencode }}">{% trans "Share on Twitter" %}</a>
 <a class="btn btn-sm share-facebook" target="_blank" href="http://facebook.com/sharer.php?u={{ request.build_absolute_uri }}&amp;t={{ blog_post.title|urlencode }}">{% trans "Share on Facebook" %}</a>
+<a class="btn btn-sm share-google" target="_blank" href="https://plus.google.com/share?url={{ request.build_absolute_uri }}&amp;t={{ blog_post.title|urlencode }}">{% trans "Share on Google+" %}</a>
 {% endblock %}
 
 {% block blog_post_previous_next %}
@@ -106,14 +113,14 @@
 {% with blog_post.get_previous_by_publish_date as previous %}
 {% if previous %}
 <li class="previous">
-    <a href="{{ previous.get_absolute_url }}">&larr; {{ previous }}</a>
+    <a class="button button--fixed-width" href="{{ previous.get_absolute_url }}">Previous</a>
 </li>
 {% endif %}
 {% endwith %}
 {% with blog_post.get_next_by_publish_date as next %}
 {% if next %}
 <li class="next">
-    <a href="{{ next.get_absolute_url }}">{{ next }} &rarr;</a>
+    <a class="button button--fixed-width" href="{{ next.get_absolute_url }}">Next</a>
 </li>
 {% endif %}
 {% endwith %}
@@ -133,8 +140,9 @@
 {% endif %}
 {% endblock %}
 
+<!--
 {% block blog_post_detail_comments %}
 {% if blog_post.allow_comments %}{% comments_for blog_post %}{% endif %}
 {% endblock %}
-
+-->
 {% endblock %}

@@ -234,7 +234,7 @@ dl dd { margin: 0; }
 .button { display: inline-block; color: #fff; background-color: #a1c379; padding: 1em 1.5625em; font-style: italic; -webkit-transition: all 0.26s ease-in-out; -moz-transition: all 0.26s ease-in-out; transition: all 0.26s ease-in-out; }
 .button:hover { background-color: #e2ebd8; }
 
-.button--fixed-width { width: 195px; margin: 10px 10px; }
+.button--fixed-width { width: 195px; /* margin: 10px 10px; */ }
 
 .login { background-color: #6b6967; text-align: right; }
 .login a { text-transform: uppercase; font-size: 0.6875em; line-height: 1; margin: 0; padding: 0; display: inline-block; padding: 3px 10px 7px; }
