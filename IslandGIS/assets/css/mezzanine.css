@@ -667,3 +667,9 @@ a .partner:hover {
   margin: 0 28px 28px 0;
   border: 1px solid #EBEBEB;
 }
+#index .editable-link {
+  display: none!important;
+}
+.teamtable {
+  width: 150px!important;
+}
