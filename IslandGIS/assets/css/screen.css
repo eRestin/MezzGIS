@@ -312,7 +312,7 @@ this element is the one that *you* will style the most.
 .tab__controls { display: none; }
 @media screen and (min-width: 47.5em) { .tab__controls { display: block; } }
 
-.tabs { background-color: #6b6967; min-height: 23.4375em; color: #fff; }
+.tabs { background-color: #6b6967; min-height: 23.4375em; color: #fff; text-align: justify; }
 
 .tab__links { overflow: auto; width: 100%; color: #6b6967; padding: 0 0.625em; }
 

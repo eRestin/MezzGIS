@@ -489,8 +489,8 @@ float the buttons inside it. This prevents collapsing. */
   float: right;
   margin-left: 10px;
 }
-.column {
-
+.content p {
+  text-align: justify;
 }
 .grey {
   background-color: #EBEBEB;
