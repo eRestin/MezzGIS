@@ -481,6 +481,9 @@ float the buttons inside it. This prevents collapsing. */
 /*========================================
         MY STYLES
 ==========================================*/
+.key__cat {
+  padding-left: 0.625em;
+}
 .img_left {
   float: left;
   margin-right: 10px;
@@ -502,6 +505,9 @@ float the buttons inside it. This prevents collapsing. */
 }
 .white {
   background-color: #ffffff;
+}
+.green {
+  color: #A3C379;
 }
 .get-down {
   margin-bottom: 30px;

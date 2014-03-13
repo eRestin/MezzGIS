@@ -360,7 +360,7 @@ this element is the one that *you* will style the most.
 .key--detail { margin-top: 0; }
 .key--detail .key__item--tweet { margin-top: 0; }
 
-.key__item { font-size: 1em; text-transform: uppercase; color: #a3c379; background: transparent url(../../images/icons/twitter.png) top left no-repeat; padding-left: 3.125em; height: 2.1875em; margin-bottom: 0.9375em; line-height: 1; padding-top: 0.625em; }
+.key__item { font-size: 1em; text-transform: uppercase; color: #a3c379; /* background: transparent url(../../images/icons/twitter.png) top left no-repeat; padding-left: 3.125em; */ height: 2.1875em; margin-bottom: 0.9375em; line-height: 1; padding-top: 0.625em; }
 
 .key__item--tweet { margin-top: 3.125em; }
 

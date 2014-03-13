@@ -26,7 +26,7 @@
 {% with blog_post.categories.all as categories %}
     {% if categories %}
     {% for category in categories %}
-    <img class="col-md-1 for_blog_icon"src="/static/media/uploads/icons/{{ category|lower }}.png" alt="{{category}}"/>{% if not forloop.last %}, {% endif %}
+    <img class="col-md-1 for_blog_icon" src="/static/media/uploads/icons/{{ category|lower }}.png" alt="{{category}}"/>{% if not forloop.last %}, {% endif %}
     {% endfor %}
     {% endif %}
 {% endwith %}

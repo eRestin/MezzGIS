@@ -3,10 +3,10 @@
 {% block blog_categories %}
 {% blog_categories as categories %}
 {% if categories %}
-<ul class="list-unstyled">
+<ul class="list-unstyled key">
 {% for category in categories %}
-<li>
-    <a href="{% url "blog_post_list_category" category.slug %}"><h3><img src="/static/media/uploads/icons/{{ category|lower }}.png" alt="{{category}}"/> {{ category }}</h3></a>
+<li class="key__item">
+    <a href="{% url "blog_post_list_category" category.slug %}"><img src="/static/media/uploads/icons/{{ category|lower }}.png" alt="{{category}}"/><span class="key__cat">{{ category }}</span></a>
 </li>
 {% endfor %}
 </ul>
