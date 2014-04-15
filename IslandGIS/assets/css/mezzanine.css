@@ -676,3 +676,17 @@ a .partner:hover {
 .teamtable {
   width: 150px!important;
 }
+
+/*========================================
+        ADDITIONS by kris
+==========================================*/
+h4 {
+    text-align: center;
+    padding: 35px 0 10px 0;
+}
+p.block::after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+}

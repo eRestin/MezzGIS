@@ -244,7 +244,7 @@ dl dd { margin: 0; }
 @media screen and (min-width: 47.5em) { .banner { text-align: left; } }
 
 .logo { width: 200px; height: auto; float: left; margin-left: 11px; }
-@media screen and (min-width: 47.5em) { .logo { width: 243px; margin-left: 23px; } }
+@media screen and (min-width: 47.5em) { .logo { width: 275px; margin-left: 23px; } }
 
 .mobile-menu__trigger { width: 30px; opacity: .7; position: absolute; top: 53px; right: 20px; cursor: pointer; }
 @media screen and (min-width: 47.5em) { .mobile-menu__trigger { display: none; } }
