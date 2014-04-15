@@ -253,7 +253,7 @@ dl dd { margin: 0; }
 @media screen and (min-width: 47.5em) { .nav { float: right; display: block; padding-top: 0; clear: none; } }
 .nav a { text-transform: uppercase; text-align: center; display: block; padding: 6px; background-color: #e7eedf; margin-bottom: 2px; }
 @media screen and (min-width: 47.5em) { .nav a { font-size: 1.0625em; margin-left: 0.75em; display: inline-block; padding: 0; background-color: transparent; margin-bottom: 0; text-align: left; } }
-@media screen and (min-width: 57.5em) { .nav a { margin-left: 2em; } }
+@media screen and (min-width: 57.5em) { .nav a { margin-left: 1.3em; } }
 
 .nav .active { color: #9f914f; }
 
