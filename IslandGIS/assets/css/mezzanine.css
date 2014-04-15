@@ -640,7 +640,7 @@ a .client_logo:hover {
   width: 29.45%;
   height: 12.45em;
   float: left;
-  margin: 0 28px 28px 0;
+  margin: 0 30px 28px 0;
   border: 1px solid #EBEBEB;
 }
 a .partner_logo:hover {
@@ -650,7 +650,7 @@ a .partner_logo:hover {
   width: 29.45%;
   height: 12.45em;
   float: left;
-  margin: 0 28px 28px 0;
+  margin: 0 30px 28px 0;
   border: 1px solid #EBEBEB;
 }
 a .client:hover {
@@ -660,7 +660,7 @@ a .client:hover {
   width: 29.45%;
   height: 12.45em;
   float: left;
-  margin: 0 28px 28px 0;
+  margin: 0 30px 28px 0;
   border: 1px solid #EBEBEB;
 }
 a .partner:hover {
@@ -670,7 +670,7 @@ a .partner:hover {
   width: 29.45%;
   height: 12.45em;
   float: left;
-  margin: 0 28px 28px 0;
+  margin: 0 30px 28px 0;
   border: 1px solid #EBEBEB;
 }
 .teamtable {
