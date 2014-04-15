@@ -686,6 +686,8 @@ a .partner:hover {
 h5 {
     text-align: center;
     padding: 35px 0 10px 0;
+    font-size: 1.2em;
+    font-style: italic;
 }
 p.block::after {
     content: '';
