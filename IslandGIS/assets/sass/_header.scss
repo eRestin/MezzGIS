@@ -24,10 +24,10 @@
   width: 200px;
   height: auto;
   float: left;
-  margin-left: 11px;
+  margin-left: 0;
   @include media($medium-screen) {
     width: 275px;
-    margin-left: 23px;
+    margin-left: 0;
   }
 }
 .mobile-menu__trigger {
@@ -70,7 +70,7 @@
       text-align: left;
     }
     @include media($large-screen) {
-      margin-left: 2.375em;
+      margin-left: 1.3em;
     }
   }
 }
