@@ -695,3 +695,33 @@ p.block::after {
     clear: both;
     visibility: hidden;
 }
+
+.team .gallery {
+    max-width: 70%;
+    float: left;
+}
+
+.team .gallery a {
+    margin-right: 40px;
+    margin-bottom: 35px;
+}
+
+.team .gallery a img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: gray;
+    filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
+}
+.team .gallery a img:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+    filter: none;
+    filter: none;
+}
+
+.team .blurb {
+    max-width: 30%;
+    float: left;
+}
