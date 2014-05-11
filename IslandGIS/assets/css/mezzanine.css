@@ -680,6 +680,15 @@ a .partner:hover {
 /*========================================
         ADDITIONS by kris
 ==========================================*/
+
+li#googleEP {
+    width: 80px;
+    height: 67px;
+    background: url(/static/media/uploads/google_enterprise-partner.gif);
+    text-indent: -9999px;
+    position: absolute;
+    right: 55px;
+}
 .row {
     margin-bottom: 35px;
 }
