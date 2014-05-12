@@ -715,19 +715,46 @@ p.block::after {
     margin-bottom: 35px;
 }
 
-.team .gallery a img {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    filter: gray;
-    filter: grayscale(100%);
-    filter: url(desaturate.svg#greyscale);
+.team .gallery a {
+    display: block;
+    float: left;
+    width: 170px;
+    height: 250px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
 }
-.team .gallery a img:hover {
-    -webkit-filter: none;
-    -moz-filter: none;
-    filter: none;
-    filter: none;
-    filter: none;
+.team .gallery a:hover {
+    background-position: left;
+}
+
+.team .gallery a#paul {
+    background-image: url(/static/media/uploads/team/paul.jpg);
+}
+.team .gallery a#james {
+    background-image: url(/static/media/uploads/team/james.jpg);
+}
+.team .gallery a#najya {
+    background-image: url(/static/media/uploads/team/najya.jpg);
+}
+.team .gallery a#max {
+    background-image: url(/static/media/uploads/team/max.jpg);
+}
+.team .gallery a#rosh {
+    background-image: url(/static/media/uploads/team/rosh.jpg);
+}
+.team .gallery a#olga {
+    background-image: url(/static/media/uploads/team/olga.jpg);
+}
+.team .gallery a#john {
+    background-image: url(/static/media/uploads/team/john.jpg);
+}
+.team .gallery a#douglas {
+    background-image: url(/static/media/uploads/team/douglas.jpg);
+}
+.team .gallery a#mike {
+    background-image: url(/static/media/uploads/team/mike.jpg);
 }
 
 .team .blurb {
