@@ -681,7 +681,7 @@ a .partner:hover {
         ADDITIONS by kris
 ==========================================*/
 
-li#googleEP {
+li#google-geo-partner {
     width: 80px;
     height: 67px;
     background: url(/static/media/uploads/google_enterprise-partner.gif);
