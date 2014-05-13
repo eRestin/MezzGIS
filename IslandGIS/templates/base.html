@@ -7,6 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
 <meta name="description" content="{% block meta_description %}{% endblock %}">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
 <title>{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}</title>
 <link rel="shortcut icon" href="{% static "img/favicon.ico" %}">
 
@@ -93,17 +95,16 @@
 {% endnevercache %}
 
 {% block headers %}
-<div class="logo">
-    <a href="{% url "home" %}">
-        <img src="{{ MEDIA_URL }}uploads/logo.png">
-        </a>
-    </div>
+<header role="banner" class="banner">
 
-    <div class="my-menu">
-        {% page_menu "pages/menus/dropdown.html" %}
-    </div>
-</div>
+    <a href="{% url "home" %}"><img class="logo" src="{{ MEDIA_URL }}uploads/logo.png"></a>
+
+    {% page_menu "pages/menus/dropdown.html" %}
+
+</header>
 {% endblock %}
+
+</div>
 
 {% block map %}{% endblock %}
 
