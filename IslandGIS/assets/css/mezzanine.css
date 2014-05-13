@@ -512,11 +512,20 @@ float the buttons inside it. This prevents collapsing. */
 .get-down {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 47.5em) {
 .my-menu {
   text-transform:uppercase;
   float:right;
   margin-bottom: 40px;
 }
+}
+@media screen and (min-width: 57.5em) {
+.my-menu {
+  text-transform:uppercase;
+  margin-bottom: 40px;
+}
+}
+
 .my-panel {
   margin-bottom: 0px!important;
   float: right;

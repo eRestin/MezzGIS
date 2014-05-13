@@ -96,15 +96,18 @@
 
 {% block headers %}
 <header role="banner" class="banner">
+<div class="logo">
+    <a href="{% url "home" %}">
+        <img src="{{ MEDIA_URL }}uploads/logo.png">
+        </a>
+    </div>
 
-    <a href="{% url "home" %}"><img class="logo" src="{{ MEDIA_URL }}uploads/logo.png"></a>
-
-    {% page_menu "pages/menus/dropdown.html" %}
-
+    <div class="my-menu">
+        {% page_menu "pages/menus/dropdown.html" %}
+    </div>
+</div>
 </header>
 {% endblock %}
-
-</div>
 
 {% block map %}{% endblock %}
 
@@ -144,7 +147,7 @@
 <div class="footer">
       <footer class="wrapper" role="contentinfo">
         <img class="logo logo--footer" src="{{ MEDIA_URL }}uploads/logo.png" alt="Island GIS">
-        <p>1-2 Sciennes Gardens, Edinburgh, <br> Scotland, UK, EH9 1NR <br>+44 (0) 131 667 5454<br>Company registration number SC313548</p>
+        <p>1-2 Sciennes Gardens, Edinburgh, <br> Scotland, UK, EH9 1NR <br>+44 (0) 131 667 5454</p>
 
         <ul class="sm">
           <li class="sm__item"><a href="http://www.linkedin.com/company/island-gis"><img src="{{ MEDIA_URL }}uploads/linkedin.png" alt="Linkedin"></a></li>

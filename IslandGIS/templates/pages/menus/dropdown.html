@@ -4,7 +4,7 @@
 
 {% if branch_level == 0 %}
 <img class="mobile-menu__trigger" src="{{ MEDIA_URL }}uploads/icons/mobile-menu@2x.png" alt="">
-<ul class="nav navbar-nav" role="navigation">
+<ul class="nav navbar-nav">
     {% for page in page_branch %}
     {% if not has_home and page.is_primary and forloop.first %}
     <li{% if on_home %} class="active"{% endif %} id="dropdown-menu-home">
