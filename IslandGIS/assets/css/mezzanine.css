@@ -767,4 +767,8 @@ p.block::after {
 .team .blurb {
     max-width: 30%;
     float: left;
+    display: none;
+}
+.team .blurb {
+    display: block;
 }
