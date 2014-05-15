@@ -714,6 +714,10 @@ p.block::after {
     visibility: hidden;
 }
 
+.team {
+    margin-top: 35px;
+}
+
 .team .gallery {
     max-width: 70%;
     float: left;
@@ -734,6 +738,7 @@ p.block::after {
 
 .team .gallery a:hover {
     background-position: left;
+    cursor: pointer;
 }
 
 .team .gallery a#paulImg {
