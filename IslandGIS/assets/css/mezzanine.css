@@ -769,6 +769,6 @@ p.block::after {
     float: left;
     display: none;
 }
-.team .blurb {
+.team #paul {
     display: block;
 }
