@@ -736,31 +736,31 @@ p.block::after {
     background-position: left;
 }
 
-.team .gallery a#paul {
+.team .gallery a#paulImg {
     background-image: url(/static/media/uploads/team/paul.jpg);
 }
-.team .gallery a#james {
+.team .gallery a#jamesImg {
     background-image: url(/static/media/uploads/team/james.jpg);
 }
-.team .gallery a#najya {
+.team .gallery a#najyaImg {
     background-image: url(/static/media/uploads/team/najya.jpg);
 }
-.team .gallery a#max {
+.team .gallery a#maxImg {
     background-image: url(/static/media/uploads/team/max.jpg);
 }
-.team .gallery a#rosh {
+.team .gallery a#roshImg {
     background-image: url(/static/media/uploads/team/rosh.jpg);
 }
-.team .gallery a#olga {
+.team .gallery a#olgaImg {
     background-image: url(/static/media/uploads/team/olga.jpg);
 }
-.team .gallery a#john {
+.team .gallery a#johnImg {
     background-image: url(/static/media/uploads/team/john.jpg);
 }
-.team .gallery a#douglas {
+.team .gallery a#douglasImg {
     background-image: url(/static/media/uploads/team/douglas.jpg);
 }
-.team .gallery a#mike {
+.team .gallery a#mikeImg {
     background-image: url(/static/media/uploads/team/mike.jpg);
 }
 
