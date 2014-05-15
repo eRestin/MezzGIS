@@ -736,11 +736,6 @@ p.block::after {
     background-position: right;
 }
 
-.team .gallery a:hover {
-    background-position: left;
-    cursor: pointer;
-}
-
 .team .gallery a#paulImg {
     background-image: url(/static/media/uploads/team/paul.jpg);
 }
@@ -767,6 +762,14 @@ p.block::after {
 }
 .team .gallery a#mikeImg {
     background-image: url(/static/media/uploads/team/mike.jpg);
+}
+
+.team .gallery a:hover {
+    background-position: left;
+    cursor: pointer;
+}
+.team .gallery a.active {
+    background-position: left;
 }
 
 .team .blurb {
