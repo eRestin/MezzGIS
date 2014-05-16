@@ -11,7 +11,6 @@ var GIS = GIS || {};
 GIS = {
 
   windowObject: $(window),
-  menuElement: $('nav[role="navigation"]'),
 
   utility: function() {
     // return current window width
@@ -74,6 +73,7 @@ GIS = {
   },
   mobileMenu: {
     init: function() {
+      GIS.menuElement = $('nav[role="navigation"]');
       var $menuTrigger = $('.mobile-menu__trigger');
       $menuTrigger.on('click', function(e) {
         e.preventDefault();
