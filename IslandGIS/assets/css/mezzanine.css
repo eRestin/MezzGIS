@@ -693,10 +693,12 @@ a .partner:hover {
 li#google-geo-partner {
     width: 80px;
     height: 67px;
-    background: url(/static/media/uploads/google_enterprise-partner.gif);
-    text-indent: -9999px;
+    background: url(/static/media/uploads/google_enterprise-partner.gif);  
     position: absolute;
     right: 55px;
+}
+li#google-geo-partner a {
+    text-indent: -9999px;
 }
 .row {
     margin-bottom: 35px;
