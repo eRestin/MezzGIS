@@ -716,6 +716,11 @@ p.block::after {
     visibility: hidden;
 }
 
+.feature__text {
+    min-height: 115px;
+}
+
+/* team page */
 .team {
     margin-top: 35px;
 }
@@ -781,4 +786,27 @@ p.block::after {
 }
 .team #paul {
     display: block;
+}
+
+/* google partner page */
+
+.google-icn {
+    margin: 40px auto;
+    width: 750px;
+    height: 100px;
+}
+.google-icn::after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.google-icn p {
+    width: 130px;
+    float: left;
+    text-align: center;
+}
+.google-icn p img {
+    display: block;
+    margin: 0 auto;
 }
