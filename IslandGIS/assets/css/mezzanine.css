@@ -700,6 +700,13 @@ li#google-geo-partner {
 li#google-geo-partner a {
     text-indent: -9999px;
 }
+@media screen and (max-width: 1024px) {
+    li#google-geo-partner {
+        right: 25px;
+        top: 33px;
+    }
+}
+
 .row {
     margin-bottom: 35px;
 }
@@ -743,33 +750,15 @@ p.block::after {
     background-position: right;
 }
 
-.team .gallery a#paulImg {
-    background-image: url(/static/media/uploads/team/paul.jpg);
-}
-.team .gallery a#jamesImg {
-    background-image: url(/static/media/uploads/team/james.jpg);
-}
-.team .gallery a#najyaImg {
-    background-image: url(/static/media/uploads/team/najya.jpg);
-}
-.team .gallery a#maxImg {
-    background-image: url(/static/media/uploads/team/max.jpg);
-}
-.team .gallery a#roshImg {
-    background-image: url(/static/media/uploads/team/rosh.jpg);
-}
-.team .gallery a#olgaImg {
-    background-image: url(/static/media/uploads/team/olga.jpg);
-}
-.team .gallery a#johnImg {
-    background-image: url(/static/media/uploads/team/john.jpg);
-}
-.team .gallery a#douglasImg {
-    background-image: url(/static/media/uploads/team/douglas.jpg);
-}
-.team .gallery a#mikeImg {
-    background-image: url(/static/media/uploads/team/mike.jpg);
-}
+.team .gallery a#paulImg { background-image: url(/static/media/uploads/team/paul.jpg); }
+.team .gallery a#jamesImg { background-image: url(/static/media/uploads/team/james.jpg); }
+.team .gallery a#najyaImg { background-image: url(/static/media/uploads/team/najya.jpg); }
+.team .gallery a#maxImg { background-image: url(/static/media/uploads/team/max.jpg); }
+.team .gallery a#roshImg { background-image: url(/static/media/uploads/team/rosh.jpg); }
+.team .gallery a#olgaImg { background-image: url(/static/media/uploads/team/olga.jpg); }
+.team .gallery a#johnImg { background-image: url(/static/media/uploads/team/john.jpg); }
+.team .gallery a#douglasImg { background-image: url(/static/media/uploads/team/douglas.jpg); }
+.team .gallery a#mikeImg { background-image: url(/static/media/uploads/team/mike.jpg); }
 
 .team .gallery a:hover {
     background-position: left;
