@@ -690,15 +690,18 @@ a .partner:hover {
         ADDITIONS by kris
 ==========================================*/
 
-li#google-geo-partner {
-    width: 80px;
-    height: 67px;
-    background: url(/static/media/uploads/google_enterprise-partner.gif);  
-    position: absolute;
-    right: 55px;
-}
-li#google-geo-partner a {
-    text-indent: -9999px;
+
+@media screen and (min-width: 47.5em) {
+    li#google-geo-partner {
+        width: 80px;
+        height: 67px;
+        background: url(/static/media/uploads/google_enterprise-partner.gif);  
+        position: absolute;
+        right: 55px;
+    }
+    li#google-geo-partner a {
+        text-indent: -9999px;
+    }
 }
 @media screen and (max-width: 1024px) {
     li#google-geo-partner {
