@@ -783,7 +783,7 @@ p.block::after {
 /* google partner page */
 
 .google-icn {
-    margin: 40px auto;
+    margin: 40px auto 0;
     width: 750px;
     height: 100px;
 }
@@ -800,5 +800,12 @@ p.block::after {
 }
 .google-icn p img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px;
+}
+.google-icn p a, .google-icn p a:visited {
+    color: #A3C379;
+}
+.google-icn p a:hover {
+    color: #9f914f;
+    text-decoration: underline;
 }
