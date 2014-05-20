@@ -1,5 +1,6 @@
 {% extends "pages/page.html" %}
 {% load mezzanine_tags %}
+{% load blog_tags keyword_tags i18n future %}
 <body id="{% block body_id %}index{% endblock %}">
 
 {% block breadcrumb_menu %}
@@ -178,15 +179,27 @@
             </div>
         </div>
         <div class="feature">
-            <h3 class="feature__title">Our Blog</h3>
+            <h3 class="feature__title">Our News</h3>
             <div class="feature__text">
             <h4 class="feature__title--sub">
-            {% editable flexi_OurBlogBox.content %}
-            {{flexi_OurBlogBox.content|richtext_filter|safe}}
-            {% endeditable %}
-            </p>
+
+            {% block blog_recent_posts %}
+            {% blog_recent_posts 3 as recent_posts %}
+            {% if recent_posts %}
+            <div class="news_block">
+            <ul class="unstyled recent-posts bloggy">
+            {% for recent_post in recent_posts %}
+            <li><a href="{{ recent_post.get_absolute_url }}"
+        >{{ recent_post.title }}</a> <h6>{{ recent_post.publish_date|timesince }} {% trans "ago" %}<h6><hr></li>
+            {% endfor %}
+            </ul>
+            </div>
+            {% endif %}
+            {% endblock %}
+
             <a href="blog" class="feature__link">Read More</a>
             </div>
+
         </div>
         <div class="feature">
             <h3 class="feature__title">Our Video</h3>
