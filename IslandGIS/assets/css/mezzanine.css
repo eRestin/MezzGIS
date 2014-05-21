@@ -723,6 +723,9 @@ h5 {
     font-size: 1.2em;
     font-style: italic;
 }
+.content p {
+  float: left;
+}
 p.block::after, div.feature:last-of-type::after {
     content: '';
     display: block;
