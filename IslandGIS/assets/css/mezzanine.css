@@ -723,7 +723,7 @@ h5 {
     font-size: 1.2em;
     font-style: italic;
 }
-p.block::after {
+p.block::after, div.feature:last-of-type::after {
     content: '';
     display: block;
     clear: both;
@@ -813,3 +813,5 @@ p.block::after {
     color: #9f914f;
     text-decoration: underline;
 }
+
+
