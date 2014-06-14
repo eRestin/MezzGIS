@@ -686,10 +686,18 @@ a .partner:hover {
   width: 150px!important;
 }
 
+
+
 /*========================================
         ADDITIONS by kris
 ==========================================*/
 
+h3.feature__title {
+    font-size: 1em;
+}
+h4 {
+    line-height: 1.35;
+}
 
 @media screen and (min-width: 47.5em) {
     li#google-geo-partner {
@@ -724,7 +732,7 @@ h5 {
     font-style: italic;
 }
 .content p {
-  float: left;
+  /*float: left;*/
 }
 p.block::after, div.feature:last-of-type::after {
     content: '';
@@ -740,6 +748,12 @@ p.block::after, div.feature:last-of-type::after {
 /* team page */
 .team {
     margin-top: 35px;
+}
+
+.team>p {
+    max-width: 30%;
+    float: left;
+    margin-bottom: 35px;
 }
 
 .team .gallery {
@@ -764,11 +778,8 @@ p.block::after, div.feature:last-of-type::after {
 .team .gallery a#jamesImg { background-image: url(/static/media/uploads/team/james.jpg); }
 .team .gallery a#najyaImg { background-image: url(/static/media/uploads/team/najya.jpg); }
 .team .gallery a#maxImg { background-image: url(/static/media/uploads/team/max.jpg); }
-.team .gallery a#roshImg { background-image: url(/static/media/uploads/team/rosh.jpg); }
 .team .gallery a#olgaImg { background-image: url(/static/media/uploads/team/olga.jpg); }
-.team .gallery a#johnImg { background-image: url(/static/media/uploads/team/john.jpg); }
 .team .gallery a#douglasImg { background-image: url(/static/media/uploads/team/douglas.jpg); }
-.team .gallery a#mikeImg { background-image: url(/static/media/uploads/team/mike.jpg); }
 
 .team .gallery a:hover {
     background-position: left;
@@ -783,6 +794,11 @@ p.block::after, div.feature:last-of-type::after {
     float: left;
     display: none;
 }
+.team .blurb strong {
+    color: black;
+    text-transform: uppercase;
+}
+
 .team #paul {
     display: block;
 }
