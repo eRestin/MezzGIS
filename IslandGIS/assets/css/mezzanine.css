@@ -740,6 +740,9 @@ p.block::after, div.feature:last-of-type::after {
     clear: both;
     visibility: hidden;
 }
+div.feature:last-of-type::after {
+    min-height: 40px;
+}
 
 .feature__text {
     min-height: 115px;
@@ -794,9 +797,10 @@ p.block::after, div.feature:last-of-type::after {
     float: left;
     display: none;
 }
-.team .blurb strong {
+.team .blurb p strong {
     color: black;
     text-transform: uppercase;
+    text-align: left;
 }
 
 .team #paul {
