@@ -215,6 +215,11 @@ $(function() {
             infowindow.setContent(this.html);
             infowindow.open(map, this);
            });
+          google.maps.event.addListener(marker, "mouseout", function () {
+            map.setCenter(marker.getPosition());
+            infowindow.setContent(this.html);
+            infowindow.close(map, this);
+           });
           gmarkers.push(marker);
         }
       }
