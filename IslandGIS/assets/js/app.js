@@ -199,22 +199,22 @@ $(function() {
             ,pane: "floatPane"
             ,enableEventPropagation: false
           };
-          var ib = new InfoBox();
-          google.maps.event.addListener(marker, 'click', (function(marker, i) {
-            return function() {
-              ib.setOptions(boxOptions);
-              boxText.innerHTML = marker.html;
-              ib.open(map, marker);
-              map.panTo(pos);
-            }
-          })(marker, i));
+          //var ib = new InfoBox();
+          //google.maps.event.addListener(marker,  'mouseover', (function(marker, i) {
+          //  return function() {
+          //    ib.setOptions(boxOptions);
+          //    boxText.innerHTML = marker.html;
+          //    ib.open(map, marker);
+          //    map.panTo(pos);
+          //  }
+          //})(marker, i));
 
           // Standard markers - if not using infobox
-          // google.maps.event.addListener(marker, "click", function () {
-           //  map.setCenter(marker.getPosition());
-           //  infowindow.setContent(this.html);
-           //  infowindow.open(map, this);
-          // });
+          google.maps.event.addListener(marker, "mouseover", function () {
+            map.setCenter(marker.getPosition());
+            infowindow.setContent(this.html);
+            infowindow.open(map, this);
+           });
           gmarkers.push(marker);
         }
       }
@@ -224,7 +224,7 @@ $(function() {
 
       // Click list of attractions to open markers
       function openMarker(i) {
-        google.maps.event.trigger(gmarkers[i], "click");
+        google.maps.event.trigger(gmarkers[i], "mouseover");
         //map.setCenter(gmarkers[i].getPosition()); different effect - marker stays ststic
         map.panTo(gmarkers[i].getPosition());
       }
