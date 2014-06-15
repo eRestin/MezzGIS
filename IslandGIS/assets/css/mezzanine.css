@@ -695,9 +695,6 @@ a .partner:hover {
 h3.feature__title {
     font-size: 1em;
 }
-h4 {
-    line-height: 1.35;
-}
 
 @media screen and (min-width: 47.5em) {
     li#google-geo-partner {
