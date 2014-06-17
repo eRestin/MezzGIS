@@ -796,7 +796,6 @@ div.feature:last-of-type::after {
 }
 .team .blurb p strong {
     color: black;
-    text-transform: uppercase;
     text-align: left;
 }
 
