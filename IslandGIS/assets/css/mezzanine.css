@@ -838,23 +838,33 @@ a.sector {
     width: 245px;
     height: 222px;
     float: left;
-    text-indent: -99999;
+    text-indent: -99999px;
     background-image: url(/static/media/uploads/sectors.jpg);
     background-repeat: no-repeat;
 }
 a.sector.oil {
     background-position: 0 top;
 }
+a.sector.oil:hover {
+    background-position: 0 bottom;
+}
 a.sector.renewables {
-    background-position: 245px top;
+    background-position: -245px top;
+}
+a.sector.renewables:hover {
+    background-position: -245px bottom;
 }
 a.sector.utilities {
-    background-position: 490px top;
+    background-position: -490px top;
+}
+a.sector.utilities:hover {
+    background-position: -490px bottom;
 }
 a.sector.maritime {
-    background-position: 735px top;
+    background-position: -735px top;
+}
+a.sector.maritime:hover {
+    background-position: -735px bottom;
 }
 
-a.sector:hover {
-    background-position: bottom;
-}
+
