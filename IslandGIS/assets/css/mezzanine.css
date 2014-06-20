@@ -833,4 +833,28 @@ div.feature:last-of-type::after {
     text-decoration: underline;
 }
 
+a.sector {
+    display: block;
+    width: 245px;
+    height: 222px;
+    float: left;
+    text-indent: -99999;
+    background-image: url(/static/media/uploads/sectors.jpg);
+    background-repeat: no-repeat;
+}
+a.sector.oil {
+    background-position: 0 top;
+}
+a.sector.renewables {
+    background-position: 245px top;
+}
+a.sector.utilities {
+    background-position: 490px top;
+}
+a.sector.maritime {
+    background-position: 735px top;
+}
 
+a.sector:hover {
+    background-position: bottom;
+}
