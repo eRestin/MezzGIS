@@ -1,1 +1,0 @@
-0 * * * * /usr/python /home/lukasz/MezzGIS/IslandGIS/manage.py poll_twitter
