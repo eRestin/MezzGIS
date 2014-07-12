@@ -712,7 +712,7 @@ h3.feature__title {
         margin-left: 0;
     }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1240px) {
     li#google-geo-partner {
         right: 25px;
         top: 33px;
